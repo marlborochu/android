@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:42
+-keep class com.ma.android.service.MAService { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.ma.bus.activities.MainActivity { <init>(...); }
+

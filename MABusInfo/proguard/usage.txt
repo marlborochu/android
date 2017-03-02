@@ -1,0 +1,132 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.ma.android.dao.SQLLiteDAO:
+    240:246:public void execute(java.lang.String)
+    403:453:public java.lang.String genKEY(java.lang.String,java.lang.String,java.lang.String,int)
+com.ma.android.schedule.InitialJob
+com.ma.android.schedule.KaohsiungBusJob:
+    38:38:public boolean isRun()
+com.ma.android.schedule.ScheduleJob:
+    public abstract boolean isRun()
+com.ma.android.schedule.ScheduleManager:
+    64:64:public java.util.Date getExecuteDate()
+    68:68:public java.util.HashMap getJobs()
+    85:93:public void startJob()
+com.ma.android.schedule.THSRCTmeTableJob:
+    39:39:public boolean isRun()
+com.ma.android.schedule.TWTrainJob:
+    36:36:public boolean isRun()
+com.ma.android.schedule.TaichungBusJob:
+    38:38:public boolean isRun()
+com.ma.android.schedule.TainanBusJob:
+    38:38:public boolean isRun()
+com.ma.android.schedule.TaipeiBusJob:
+    37:37:public boolean isRun()
+com.ma.android.service.MAWidgetProvider
+com.ma.android.utils.AndroidUtil:
+    public static final int REQUEST_TAKE_PHOTO
+    public static final int REQUEST_PHOTO
+    public static final java.lang.String KEY_IMG_TYPE
+    android.view.animation.AnimationSet showTop
+    android.view.animation.AnimationSet showBottom
+    android.view.animation.AnimationSet dismissTop
+    197:203:public void saveKeyValue(android.app.Activity,java.lang.String,java.lang.String)
+    206:212:public void removeKeyValue(android.app.Activity,java.lang.String)
+    214:216:public java.lang.String getKeyValue(android.app.Activity,java.lang.String)
+    219:221:public java.lang.String getKeyValue(android.app.Activity,java.lang.String,java.lang.String)
+    225:227:public float convertPixelsToDp(float,android.content.Context)
+    232:234:public float convertDpToPixel(float,android.content.Context)
+    243:246:public java.io.File getStorageDir(java.lang.String)
+    250:271:public void takePictureIntent(android.app.Activity,java.lang.String,java.lang.String)
+    275:280:public void getPicture(android.app.Activity)
+    284:287:public android.graphics.drawable.Drawable getDrawable(android.content.Context,java.io.File)
+    293:323:public void downloadFile(java.lang.String,java.lang.String,java.lang.String)
+    327:341:public void showButtonDialog(android.content.Context,java.lang.String,java.lang.String,java.lang.String)
+    345:345:public java.lang.Boolean getTTSStatus()
+    348:362:public android.speech.tts.TextToSpeech getTTS(android.content.Context)
+    368:369:public int getPhoneState(android.content.Context)
+    388:397:public android.view.animation.AnimationSet getShowTop()
+    401:410:public android.view.animation.AnimationSet getShowBottom()
+    414:423:public android.view.animation.AnimationSet getDismissTop()
+    442:450:public android.view.animation.AnimationSet getDismissBottom(float)
+    455:475:public void setTopBottomShowDismissCtrl(android.view.MotionEvent,android.os.Handler,android.os.Handler)
+    480:489:public void setDefaultSpinner(android.app.Activity,java.util.ArrayList,android.widget.Spinner)
+    343:343:static synthetic android.speech.tts.TextToSpeech access$0(com.ma.android.utils.AndroidUtil)
+    344:344:static synthetic void access$1(com.ma.android.utils.AndroidUtil,java.lang.Boolean)
+com.ma.android.utils.AndroidUtil$1
+com.ma.android.utils.AndroidUtil$2
+com.ma.android.utils.DateUtil:
+    26:33:public long TimeInterval(java.util.Calendar,java.util.Calendar)
+    41:53:public long TimeInterval(java.lang.String,java.lang.String)
+    58:68:public long TimeInterval(java.util.Date,java.util.Date)
+    81:95:public int DayInterval(java.util.Calendar,java.util.Calendar)
+    109:121:public int DayInterval(java.lang.String,java.lang.String)
+    133:137:public int DayInterval(java.util.Date,java.util.Date)
+    152:156:public boolean compareDate(java.util.Date,java.util.Date,java.util.Date)
+    166:170:public java.lang.String formatDate(java.util.Calendar)
+    178:181:public java.lang.String formatDate(java.util.Date)
+    203:212:public java.util.Date parseDate(java.lang.String)
+    223:232:public java.util.Date parseDate(java.lang.String,java.lang.String)
+    236:239:public java.util.Date addMinutes(java.util.Date,int)
+    242:245:public java.util.Date addSecond(java.util.Date,int)
+    248:251:public java.util.Date addHours(java.util.Date,int)
+    261:264:public java.util.Date addWeeks(java.util.Date,int)
+    269:272:public java.util.Date addMonths(java.util.Date,int)
+    280:282:public int getDayOfMonth(java.util.Date)
+    286:286:public java.lang.String getFormatDate(java.lang.String)
+    291:303:public java.util.Date getLatestDateOfMonth(java.util.Date)
+    309:313:public java.util.Date getFirstDateOfMonth(java.util.Date)
+    318:322:public boolean isLastDateOfMonth(java.util.Date)
+    327:332:public java.util.Date getTWDate()
+    339:346:public static void main(java.lang.String[])
+com.ma.android.utils.FileUtil
+com.ma.android.utils.HttpUtil:
+    57:64:public java.lang.String requestPost(java.lang.String,java.util.HashMap,java.util.HashMap,java.lang.String)
+    67:67:public java.lang.String requestPost(java.lang.String,java.util.HashMap,java.util.List)
+    125:125:public java.lang.String request(java.lang.String,java.lang.String)
+    128:128:public java.lang.String request(java.lang.String,java.util.HashMap)
+com.ma.android.utils.ImageUtil
+com.ma.android.utils.UtilsResource:
+    public static final java.lang.String ResourceName
+    public static final java.lang.String KEY_DATABASE_NAME
+    public static final java.lang.String KEY_DATABASE_VERSION
+    public static final java.lang.String KEY_SQL_FILE_INIT_TABLE
+    public static final java.lang.String KEY_SQL_FILE_INIT_DATA
+    public static final java.lang.String KEY_SQL_FILE_UPGRADE_TABLE
+    public static final java.lang.String KEY_SQL_FILE_UPGRADE_DATA
+    public static final java.lang.String KEY_VIEW_ID
+    public static final java.lang.String KEY_SCHEDULE_JOB_ID
+    public static final java.lang.String KEY_TTS_SUBJECT
+    public static final java.lang.String KEY_TTS_CONTEXT
+    private java.util.ArrayList viewIds
+    private java.util.ArrayList scheduleJobs
+    public static final java.lang.String KEY_A
+    public static final java.lang.String KEY_B
+    public static final java.lang.String KEY_C
+    public static final java.lang.String KEY_D
+    public static final java.lang.String KEY_E
+    public static final java.lang.String KEY_F
+    public static final java.lang.String KEY_G
+    public static final java.lang.String KEY_H
+    public static final java.lang.String KEY_I
+    public static final java.lang.String KEY_J
+    public static final java.lang.String KEY_K
+    public static final java.lang.String KEY_L
+    public static final java.lang.String KEY_M
+    public static final java.lang.String KEY_N
+    public static final java.lang.String KEY_O
+    public static final java.lang.String KEY_P
+    public static final java.lang.String KEY_Q
+    public static final java.lang.String KEY_R
+    public static final java.lang.String KEY_S
+    public static final java.lang.String KEY_T
+    public static final java.lang.String KEY_U
+    public static final java.lang.String KEY_V
+    public static final java.lang.String KEY_W
+    public static final java.lang.String KEY_X
+    public static final java.lang.String KEY_Y
+    public static final java.lang.String KEY_Z
+    public static final java.lang.String KEY_DATA
+    public static final java.lang.String KEY_LAYOUT_ID
+    50:65:public java.util.ArrayList getViewIds()
+    70:85:public java.util.ArrayList getScheduleJobs()

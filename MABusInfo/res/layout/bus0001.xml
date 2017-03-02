@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_vertical|center_horizontal|center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal|center" >
+
+            <Button
+                android:id="@+id/but_favorite"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/icon_background"
+                android:text="我的\r\n最愛" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal|center" >
+
+            <Button
+                android:id="@+id/but_taipei"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/icon_background"
+                android:text="台北" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_vertical|center_horizontal|center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal|center" >
+
+            <Button
+                android:id="@+id/but_taichung"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/icon_background"
+                android:text="台中" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal|center" >
+
+            <Button
+                android:id="@+id/but_tainan"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/icon_background"
+                android:text="台南" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_vertical|center_horizontal|center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal|center" >
+
+            <Button
+                android:id="@+id/but_kaohsiung"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/icon_background"
+                android:text="高雄" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal|center" >
+
+            <Button
+                android:id="@+id/but_twtrain"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/icon_background"
+                android:text="台鐵\r\n時刻表" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal|center" >
+
+            <Button
+                android:id="@+id/but_thsrc"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/icon_background"
+                android:text="高鐵\r\n時刻表" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal|center" >
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

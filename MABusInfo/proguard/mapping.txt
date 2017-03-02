@@ -1,0 +1,2868 @@
+com.ma.android.dao.SQLLiteDAO -> com.ma.android.a.a:
+    java.lang.String DATABASE_NAME -> i
+    int DATABASE_VERSION -> j
+    java.lang.String SQL_DATETIME_FORMAT -> a
+    java.lang.String KEY_STRING_TYPE -> b
+    java.lang.String KEY_INTEGER_TYPE -> c
+    java.lang.String KEY_DATE_TYPE -> d
+    java.lang.String KEY_GET -> e
+    java.lang.String KEY_SET -> f
+    java.lang.String SQL_STRING_FLAG -> g
+    java.lang.String SQL_END_FLAG -> h
+    android.content.Context context -> k
+    com.ma.android.dao.SQLLiteDAO instance -> l
+    com.ma.android.dao.SQLLiteDAO getInstance(android.content.Context) -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    java.util.ArrayList query(java.lang.String,java.lang.String[],java.lang.Class) -> a
+    void insert(java.lang.String,android.content.ContentValues) -> a
+    void insert(java.lang.Object) -> a
+    void delete(java.lang.Object,java.lang.String) -> a
+    void delete(android.database.sqlite.SQLiteDatabase,java.lang.Object,java.lang.String) -> a
+com.ma.android.schedule.KaohsiungBusJob -> com.ma.android.b.a:
+    android.content.Context context -> b
+    boolean isRun -> a
+    void setContext(android.content.Context) -> a
+    void run() -> run
+    void queryBusInfo() -> a
+com.ma.android.schedule.ScheduleJob -> com.ma.android.b.b:
+    void setContext(android.content.Context) -> a
+com.ma.android.schedule.ScheduleManager -> com.ma.android.b.c:
+    com.ma.android.schedule.ScheduleManager instance -> a
+    java.util.Timer timer -> b
+    android.content.Context context -> c
+    java.util.Date executeDate -> d
+    java.util.HashMap jobs -> e
+    com.ma.android.schedule.ScheduleManager getInstance(android.content.Context) -> a
+    void startSchedule() -> a
+    void cancleSchedule() -> b
+    void initJob() -> c
+    void access$0(com.ma.android.schedule.ScheduleManager,java.util.Date) -> a
+    java.util.HashMap access$1(com.ma.android.schedule.ScheduleManager) -> a
+    java.util.Date access$2(com.ma.android.schedule.ScheduleManager) -> b
+    android.content.Context access$3(com.ma.android.schedule.ScheduleManager) -> c
+com.ma.android.schedule.ScheduleManager$Schedule -> com.ma.android.b.d:
+    boolean isScreenOn -> a
+    boolean firstTimeScreenOn -> b
+    boolean firstTimeRun -> c
+    com.ma.android.schedule.ScheduleManager this$0 -> d
+    boolean execute(java.util.Date,java.lang.String) -> a
+    void run() -> run
+com.ma.android.schedule.THSRCTmeTableJob -> com.ma.android.b.e:
+    android.content.Context context -> b
+    java.lang.String queryDate -> c
+    boolean isRun -> a
+    void setQueryDate(java.lang.String) -> a
+    void setContext(android.content.Context) -> a
+    void run() -> run
+    void queryTimeTable(java.lang.String) -> b
+com.ma.android.schedule.TWTrainJob -> com.ma.android.b.f:
+    android.content.Context context -> b
+    boolean isRun -> a
+    void setContext(android.content.Context) -> a
+    void run() -> run
+    void queryStation() -> a
+com.ma.android.schedule.TaichungBusJob -> com.ma.android.b.g:
+    android.content.Context context -> b
+    boolean isRun -> a
+    void setContext(android.content.Context) -> a
+    void run() -> run
+    void queryBusInfo() -> a
+com.ma.android.schedule.TainanBusJob -> com.ma.android.b.h:
+    android.content.Context context -> b
+    boolean isRun -> a
+    void setContext(android.content.Context) -> a
+    void run() -> run
+    void queryBusInfo() -> a
+com.ma.android.schedule.TaipeiBusJob -> com.ma.android.b.i:
+    android.content.Context context -> b
+    boolean isRun -> a
+    void setContext(android.content.Context) -> a
+    void run() -> run
+    void queryBusInfo() -> a
+com.ma.android.service.MAService -> com.ma.android.service.MAService:
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    void onDestroy() -> onDestroy
+com.ma.android.utils.AndroidUtil -> com.ma.android.c.a:
+    com.ma.android.utils.AndroidUtil instance -> d
+    java.lang.String KEY_DATA -> a
+    java.util.concurrent.atomic.AtomicInteger sNextGeneratedId -> e
+    android.speech.tts.TextToSpeech tts -> f
+    java.lang.Boolean ttsStatus -> g
+    android.view.animation.AnimationSet dismissBottom -> b
+    float moveY -> c
+    com.ma.android.utils.AndroidUtil getInstance() -> a
+    int generateViewId() -> b
+    boolean getNetWorkStatus(android.content.Context) -> a
+    void showToast(android.content.Context,java.lang.String) -> a
+    android.view.animation.AnimationSet getDismissBottom() -> c
+com.ma.android.utils.DateUtil -> com.ma.android.c.b:
+    com.ma.android.utils.DateUtil du -> a
+    java.lang.String format_type -> b
+    java.lang.String default_datetime_format -> c
+    java.text.SimpleDateFormat sdf -> d
+    com.ma.android.utils.DateUtil getInstance() -> a
+    java.lang.String formatDate(java.util.Date,java.lang.String) -> a
+    java.util.Date addDays(java.util.Date,int) -> a
+com.ma.android.utils.HttpUtil -> com.ma.android.c.c:
+    java.lang.String default_encoding -> a
+    com.ma.android.utils.HttpUtil instance -> b
+    com.ma.android.utils.HttpUtil getInstance() -> a
+    java.lang.String requestPost(java.lang.String,java.util.HashMap,java.util.HashMap) -> a
+    java.lang.String requestPost(java.lang.String,java.util.HashMap,java.util.List,java.lang.String) -> a
+    java.lang.String request(java.lang.String) -> a
+    java.lang.String request(java.lang.String,java.util.HashMap,java.lang.String) -> a
+com.ma.android.utils.UtilsResource -> com.ma.android.c.d:
+    java.math.BigDecimal KEY_PAGE_DEFAULT_SIZE -> a
+    com.ma.android.utils.UtilsResource instance -> b
+    java.util.ResourceBundle resource -> c
+    com.ma.android.utils.UtilsResource getInstance() -> a
+    java.lang.String getData(java.lang.String,java.lang.String) -> a
+com.ma.android.views.DefaultView -> com.ma.android.d.a:
+    android.content.Context context -> context
+    android.view.View content -> content
+    android.app.ProgressDialog dialog -> dialog
+    android.view.LayoutInflater inflater -> inflater
+    android.view.View header -> header
+    java.math.BigDecimal displayWidth -> displayWidth
+    java.math.BigDecimal displayHeight -> displayHeight
+    android.os.Handler defaultDialogHandler -> defaultDialogHandler
+    android.os.Handler dismissDialogHandler -> dismissDialogHandler
+    android.view.LayoutInflater getInflater() -> getInflater
+    void setHeader(int) -> setHeader
+    android.view.View getHeader() -> getHeader
+    void setContent(android.view.View) -> setContent
+    android.view.View getContent() -> getContent
+    void showDefaultDialog() -> showDefaultDialog
+    void dismissDefaultDialog() -> dismissDefaultDialog
+    android.app.ProgressDialog getProgressDialog() -> getProgressDialog
+    android.widget.LinearLayout$LayoutParams getLinearLayoutParams1() -> getLinearLayoutParams1
+    android.widget.LinearLayout$LayoutParams getLinearLayoutParams(int) -> getLinearLayoutParams
+    android.widget.RelativeLayout$LayoutParams getRelativeLayoutLayoutParams(int) -> getRelativeLayoutLayoutParams
+    void init() -> init
+    void destroy() -> destroy
+    android.app.ProgressDialog access$0(com.ma.android.views.DefaultView) -> access$0
+    void access$1(com.ma.android.views.DefaultView,android.app.ProgressDialog) -> access$1
+com.ma.android.views.DefaultView$1 -> com.ma.android.d.b:
+    com.ma.android.views.DefaultView this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.ma.android.views.DefaultView$2 -> com.ma.android.d.c:
+    com.ma.android.views.DefaultView this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.ma.android.views.Header -> com.ma.android.d.d:
+    android.content.Context context -> a
+    android.view.LayoutInflater inflater -> b
+com.ma.bus.Constant -> com.ma.bus.Constant:
+    java.lang.String KEY_VIEW_ID -> KEY_VIEW_ID
+    java.lang.String KEY_VIEW_ID0001 -> KEY_VIEW_ID0001
+    java.lang.String KEY_VIEW_ID1001 -> KEY_VIEW_ID1001
+    java.lang.String KEY_VIEW_ID1002 -> KEY_VIEW_ID1002
+    java.lang.String KEY_VIEW_ID1003 -> KEY_VIEW_ID1003
+    java.lang.String KEY_VIEW_ID1004 -> KEY_VIEW_ID1004
+    java.lang.String KEY_VIEW_ID2001 -> KEY_VIEW_ID2001
+    java.lang.String KEY_VIEW_ID2002 -> KEY_VIEW_ID2002
+    java.lang.String KEY_VIEW_ID3001 -> KEY_VIEW_ID3001
+    java.lang.String KEY_BUS_NO_INFO_1 -> KEY_BUS_NO_INFO_1
+    java.lang.String KEY_BUS_NO_INFO_2 -> KEY_BUS_NO_INFO_2
+    java.lang.String KEY_BUS_NO_INFO_3 -> KEY_BUS_NO_INFO_3
+    java.lang.String KEY_BUS_NO_INFO_4 -> KEY_BUS_NO_INFO_4
+    java.lang.String KEY_BUS_NO_INFO_5 -> KEY_BUS_NO_INFO_5
+    java.lang.String KEY_BUS_NO_INFO_6 -> KEY_BUS_NO_INFO_6
+    java.lang.String KEY_FAVORITE -> KEY_FAVORITE
+    java.lang.String KEY_KEEP_BUS_NO_1 -> KEY_KEEP_BUS_NO_1
+    java.lang.String KEY_KEEP_BUS_NO_2 -> KEY_KEEP_BUS_NO_2
+    java.lang.String KEY_KEEP_BUS_NO_3 -> KEY_KEEP_BUS_NO_3
+    java.lang.String KEY_KEEP_BUS_NO_4 -> KEY_KEEP_BUS_NO_4
+    java.lang.String KEY_KEEP_BUS_NO_5 -> KEY_KEEP_BUS_NO_5
+    com.ma.bus.Constant instance -> instance
+    com.ma.bus.activities.MainActivity activity -> activity
+    com.ma.bus.Constant getInstance() -> getInstance
+    void setActivity(com.ma.bus.activities.MainActivity) -> setActivity
+    com.ma.bus.activities.MainActivity getActivity() -> getActivity
+com.ma.bus.activities.BuildConfig -> com.ma.bus.activities.BuildConfig:
+    boolean DEBUG -> DEBUG
+com.ma.bus.activities.MainActivity -> com.ma.bus.activities.MainActivity:
+    com.ma.android.views.DefaultView dv -> dv
+    android.app.ProgressDialog dialog -> dialog
+    android.os.Handler defaultDialogHandler -> defaultDialogHandler
+    android.os.Handler dismissDialogHandler -> dismissDialogHandler
+    void onCreate(android.os.Bundle) -> onCreate
+    void changeView(java.lang.String) -> changeView
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onDestroy() -> onDestroy
+    void showDefaultDialog() -> showDefaultDialog
+    void dismissDefaultDialog() -> dismissDefaultDialog
+    android.app.ProgressDialog getProgressDialog() -> getProgressDialog
+    android.app.ProgressDialog access$0(com.ma.bus.activities.MainActivity) -> access$0
+    android.app.ProgressDialog access$1(com.ma.bus.activities.MainActivity) -> access$1
+    void access$2(com.ma.bus.activities.MainActivity,android.app.ProgressDialog) -> access$2
+com.ma.bus.activities.MainActivity$1 -> com.ma.bus.activities.MainActivity$1:
+    com.ma.bus.activities.MainActivity this$0 -> this$0
+    void handleMessage(android.os.Message) -> handleMessage
+com.ma.bus.activities.MainActivity$2 -> com.ma.bus.activities.MainActivity$2:
+    com.ma.bus.activities.MainActivity this$0 -> this$0
+    void handleMessage(android.os.Message) -> handleMessage
+com.ma.bus.activities.R -> com.ma.bus.activities.R:
+com.ma.bus.activities.R$attr -> com.ma.bus.activities.R$attr:
+com.ma.bus.activities.R$color -> com.ma.bus.activities.R$color:
+    int alphablack -> alphablack
+    int body_background -> body_background
+    int header_background -> header_background
+    int menu_background -> menu_background
+    int subject_background -> subject_background
+    int text_background -> text_background
+    int text_blue -> text_blue
+    int text_blue_1 -> text_blue_1
+    int text_dark -> text_dark
+    int text_green -> text_green
+    int text_khaki -> text_khaki
+    int text_light -> text_light
+    int text_pink -> text_pink
+    int text_red -> text_red
+    int text_yellow -> text_yellow
+    int title_background -> title_background
+com.ma.bus.activities.R$drawable -> com.ma.bus.activities.R$drawable:
+    int bus_icon -> bus_icon
+    int bus_icon_big -> bus_icon_big
+    int ic_exit_to_app_black_36dp -> ic_exit_to_app_black_36dp
+    int ic_launcher -> ic_launcher
+    int ic_navigate_before_black_36dp -> ic_navigate_before_black_36dp
+    int icon_background -> icon_background
+    int line_1 -> line_1
+    int line_2 -> line_2
+com.ma.bus.activities.R$id -> com.ma.bus.activities.R$id:
+    int app_name -> app_name
+    int auto_complete_text -> auto_complete_text
+    int auto_complete_text_1 -> auto_complete_text_1
+    int auto_complete_text_2 -> auto_complete_text_2
+    int backtime -> backtime
+    int before_img -> before_img
+    int btn_train_time -> btn_train_time
+    int bus_favorite -> bus_favorite
+    int bus_favorite_list -> bus_favorite_list
+    int bus_info_title -> bus_info_title
+    int bus_infos -> bus_infos
+    int bus_name -> bus_name
+    int busno -> busno
+    int but_favorite -> but_favorite
+    int but_kaohsiung -> but_kaohsiung
+    int but_taichung -> but_taichung
+    int but_tainan -> but_tainan
+    int but_taipei -> but_taipei
+    int but_thsrc -> but_thsrc
+    int but_twtrain -> but_twtrain
+    int button1 -> button1
+    int button2 -> button2
+    int date_spinner -> date_spinner
+    int exit_img -> exit_img
+    int fromtime -> fromtime
+    int fromto -> fromto
+    int gotime -> gotime
+    int header -> header
+    int imageView1 -> imageView1
+    int price -> price
+    int scrollView1 -> scrollView1
+    int station -> station
+    int totime -> totime
+    int train_infos -> train_infos
+    int trian_info_title -> trian_info_title
+    int typecode -> typecode
+com.ma.bus.activities.R$layout -> com.ma.bus.activities.R$layout:
+    int bus0001 -> bus0001
+    int bus1001 -> bus1001
+    int bus2001 -> bus2001
+    int bus2002 -> bus2002
+    int bus3001 -> bus3001
+    int businfo_1 -> businfo_1
+    int favorite_1 -> favorite_1
+    int favorite_2 -> favorite_2
+    int header_view_layout -> header_view_layout
+    int train_stationtime_1 -> train_stationtime_1
+    int train_stationtime_2 -> train_stationtime_2
+com.ma.bus.activities.R$string -> com.ma.bus.activities.R$string:
+    int all_album -> all_album
+    int app_name -> app_name
+    int cancel -> cancel
+    int hello_world -> hello_world
+    int issave -> issave
+    int no_network -> no_network
+    int research -> research
+    int saving -> saving
+    int timer_setting -> timer_setting
+com.ma.bus.activities.R$style -> com.ma.bus.activities.R$style:
+    int AppBaseTheme -> AppBaseTheme
+    int CustomAlertDialogStyle -> CustomAlertDialogStyle
+    int StyledDialog -> StyledDialog
+    int leftBehindMenuScroll -> leftBehindMenuScroll
+com.ma.bus.activities.R$xml -> com.ma.bus.activities.R$xml:
+    int mawidget_provider -> mawidget_provider
+com.ma.bus.handler.BusInfoHandler -> com.ma.bus.handler.BusInfoHandler:
+    android.content.Context context -> context
+    com.ma.android.views.DefaultView view -> view
+    java.lang.String busno -> busno
+    boolean isRun -> isRun
+    java.util.HashMap businfo -> businfo
+    java.util.Timer schedule -> schedule
+    java.util.HashMap businfoViews -> businfoViews
+    void setContext(android.content.Context) -> setContext
+    void setDefaultView(com.ma.android.views.DefaultView) -> setDefaultView
+    void setBusNo(java.lang.String) -> setBusNo
+    java.util.HashMap getBusInfo() -> getBusInfo
+    boolean getScheduleStatus() -> getScheduleStatus
+    void stopQuery() -> stopQuery
+    void startQuery() -> startQuery
+    void handleMessage(android.os.Message) -> handleMessage
+    void viewDataCtl() -> viewDataCtl
+    java.util.HashMap query() -> query
+    boolean access$0(com.ma.bus.handler.BusInfoHandler) -> access$0
+    void access$1(com.ma.bus.handler.BusInfoHandler,boolean) -> access$1
+    void access$2(com.ma.bus.handler.BusInfoHandler,java.util.HashMap) -> access$2
+com.ma.bus.handler.BusInfoHandler$1 -> com.ma.bus.handler.BusInfoHandler$1:
+    com.ma.bus.handler.BusInfoHandler this$0 -> this$0
+    void run() -> run
+com.ma.bus.handler.KaohsiungBusHandler -> com.ma.bus.handler.KaohsiungBusHandler:
+    java.util.ArrayList busstations -> busstations
+    java.util.HashMap stationsMap -> stationsMap
+    int goStations -> goStations
+    int backStations -> backStations
+    java.util.HashMap query() -> query
+    void queryBusTime(java.util.HashMap,int,int) -> queryBusTime
+com.ma.bus.handler.THSRCHandler -> com.ma.bus.handler.THSRCHandler:
+    android.content.Context context -> context
+    com.ma.android.views.DefaultView view -> view
+    org.json.JSONArray stations -> stations
+    java.util.HashMap stationMap -> stationMap
+    int queryTimes -> queryTimes
+    org.json.JSONArray stationTimes -> stationTimes
+    void setContext(android.content.Context) -> setContext
+    void setDefaultView(com.ma.android.views.DefaultView) -> setDefaultView
+    void handleMessage(android.os.Message) -> handleMessage
+    void initTimeTableView() -> initTimeTableView
+    void initView() -> initView
+    void queryTimeTable() -> queryTimeTable
+com.ma.bus.handler.THSRCHandler$1 -> com.ma.bus.handler.THSRCHandler$1:
+    com.ma.bus.handler.THSRCHandler this$0 -> this$0
+    java.lang.String val$yyyyMMdd -> val$yyyyMMdd
+    void run() -> run
+com.ma.bus.handler.THSRCHandler$2 -> com.ma.bus.handler.THSRCHandler$2:
+    com.ma.bus.handler.THSRCHandler this$0 -> this$0
+    void run() -> run
+com.ma.bus.handler.TWTrainHandler -> com.ma.bus.handler.TWTrainHandler:
+    android.content.Context context -> context
+    com.ma.android.views.DefaultView view -> view
+    org.json.JSONArray stations -> stations
+    java.util.HashMap stationMap -> stationMap
+    int querystationTimes -> querystationTimes
+    org.json.JSONArray stationTimes -> stationTimes
+    void setContext(android.content.Context) -> setContext
+    void setDefaultView(com.ma.android.views.DefaultView) -> setDefaultView
+    void handleMessage(android.os.Message) -> handleMessage
+    void setStationTime() -> setStationTime
+    void setStation() -> setStation
+    void queryStation() -> queryStation
+    void queryStationTime() -> queryStationTime
+    com.ma.android.views.DefaultView access$0(com.ma.bus.handler.TWTrainHandler) -> access$0
+    void access$1(com.ma.bus.handler.TWTrainHandler,org.json.JSONArray) -> access$1
+    org.json.JSONArray access$2(com.ma.bus.handler.TWTrainHandler) -> access$2
+com.ma.bus.handler.TWTrainHandler$1 -> com.ma.bus.handler.TWTrainHandler$1:
+    com.ma.bus.handler.TWTrainHandler this$0 -> this$0
+    void run() -> run
+com.ma.bus.handler.TWTrainHandler$2 -> com.ma.bus.handler.TWTrainHandler$2:
+    com.ma.bus.handler.TWTrainHandler this$0 -> this$0
+    java.lang.String val$fromcode -> val$fromcode
+    java.lang.String val$tocode -> val$tocode
+    void run() -> run
+com.ma.bus.handler.TaichungBusHandler -> com.ma.bus.handler.TaichungBusHandler:
+    java.lang.String tbusno -> tbusno
+    java.util.ArrayList busstations -> busstations
+    java.util.HashMap stationsMap -> stationsMap
+    int goStations -> goStations
+    int backStations -> backStations
+    java.util.HashMap query() -> query
+    void queryBusTime(java.util.HashMap,int,int) -> queryBusTime
+    void queryStation() -> queryStation
+com.ma.bus.handler.TainanBusHandler -> com.ma.bus.handler.TainanBusHandler:
+    java.util.HashMap parameter -> parameter
+    java.util.HashMap query() -> query
+    void queryBusInfo(java.util.HashMap,java.util.ArrayList,java.lang.String) -> queryBusInfo
+com.ma.bus.handler.TaipeiBusHandler -> com.ma.bus.handler.TaipeiBusHandler:
+    java.util.HashMap query() -> query
+com.ma.bus.views.BUS0001 -> com.ma.bus.views.BUS0001:
+    void init() -> init
+    void destroy() -> destroy
+com.ma.bus.views.BUS0001$1 -> com.ma.bus.views.BUS0001$1:
+    com.ma.bus.views.BUS0001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS0001$2 -> com.ma.bus.views.BUS0001$2:
+    com.ma.bus.views.BUS0001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS0001$3 -> com.ma.bus.views.BUS0001$3:
+    com.ma.bus.views.BUS0001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS0001$4 -> com.ma.bus.views.BUS0001$4:
+    com.ma.bus.views.BUS0001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS0001$5 -> com.ma.bus.views.BUS0001$5:
+    com.ma.bus.views.BUS0001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS0001$6 -> com.ma.bus.views.BUS0001$6:
+    com.ma.bus.views.BUS0001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS0001$7 -> com.ma.bus.views.BUS0001$7:
+    com.ma.bus.views.BUS0001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS0001$8 -> com.ma.bus.views.BUS0001$8:
+    com.ma.bus.views.BUS0001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS1000 -> com.ma.bus.views.BUS1000:
+    java.util.ArrayList busnoas -> busnoas
+    java.util.HashMap busnoHM -> busnoHM
+    java.lang.String busnos -> busnos
+    com.ma.bus.handler.BusInfoHandler handler -> handler
+    com.ma.android.schedule.ScheduleJob job -> job
+    java.lang.String busnoinfo -> busnoinfo
+    java.lang.String keepbusinfo -> keepbusinfo
+    android.os.Handler initHandler -> initHandler
+    void queryBusNo() -> queryBusNo
+    void init() -> init
+    void initBusInfo() -> initBusInfo
+    void destroy() -> destroy
+    void access$0(com.ma.bus.views.BUS1000) -> access$0
+    android.content.Context access$1(com.ma.bus.views.BUS1000) -> access$1
+com.ma.bus.views.BUS1000$1 -> com.ma.bus.views.BUS1000$1:
+    com.ma.bus.views.BUS1000 this$0 -> this$0
+    void handleMessage(android.os.Message) -> handleMessage
+com.ma.bus.views.BUS1000$2 -> com.ma.bus.views.BUS1000$2:
+    com.ma.bus.views.BUS1000 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS1000$3 -> com.ma.bus.views.BUS1000$3:
+    com.ma.bus.views.BUS1000 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS1000$4 -> com.ma.bus.views.BUS1000$4:
+    com.ma.bus.views.BUS1000 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS1001 -> com.ma.bus.views.BUS1001:
+    void init() -> init
+    void queryBusNo() -> queryBusNo
+    android.content.Context access$0(com.ma.bus.views.BUS1001) -> access$0
+com.ma.bus.views.BUS1001$1 -> com.ma.bus.views.BUS1001$1:
+    com.ma.bus.views.BUS1001 this$0 -> this$0
+    void run() -> run
+com.ma.bus.views.BUS1002 -> com.ma.bus.views.BUS1002:
+    void init() -> init
+    void queryBusNo() -> queryBusNo
+    android.content.Context access$0(com.ma.bus.views.BUS1002) -> access$0
+com.ma.bus.views.BUS1002$1 -> com.ma.bus.views.BUS1002$1:
+    com.ma.bus.views.BUS1002 this$0 -> this$0
+    void run() -> run
+com.ma.bus.views.BUS1003 -> com.ma.bus.views.BUS1003:
+    void init() -> init
+    void queryBusNo() -> queryBusNo
+    android.content.Context access$0(com.ma.bus.views.BUS1003) -> access$0
+com.ma.bus.views.BUS1003$1 -> com.ma.bus.views.BUS1003$1:
+    com.ma.bus.views.BUS1003 this$0 -> this$0
+    void run() -> run
+com.ma.bus.views.BUS1004 -> com.ma.bus.views.BUS1004:
+    void init() -> init
+    void queryBusNo() -> queryBusNo
+    android.content.Context access$0(com.ma.bus.views.BUS1004) -> access$0
+com.ma.bus.views.BUS1004$1 -> com.ma.bus.views.BUS1004$1:
+    com.ma.bus.views.BUS1004 this$0 -> this$0
+    void run() -> run
+com.ma.bus.views.BUS2001 -> com.ma.bus.views.BUS2001:
+    com.ma.bus.handler.TWTrainHandler handler -> handler
+    void init() -> init
+    void destroy() -> destroy
+    android.content.Context access$0(com.ma.bus.views.BUS2001) -> access$0
+com.ma.bus.views.BUS2001$1 -> com.ma.bus.views.BUS2001$1:
+    com.ma.bus.views.BUS2001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS2001$2 -> com.ma.bus.views.BUS2001$2:
+    com.ma.bus.views.BUS2001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS2002 -> com.ma.bus.views.BUS2002:
+    com.ma.bus.handler.THSRCHandler handler -> handler
+    void init() -> init
+    void destroy() -> destroy
+com.ma.bus.views.BUS2002$1 -> com.ma.bus.views.BUS2002$1:
+    com.ma.bus.views.BUS2002 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS2002$2 -> com.ma.bus.views.BUS2002$2:
+    com.ma.bus.views.BUS2002 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS3001 -> com.ma.bus.views.BUS3001:
+    void init() -> init
+    void queryAllFavorite(java.lang.String,java.lang.String,java.lang.String) -> queryAllFavorite
+    void queryAllFavorite() -> queryAllFavorite
+    void destroy() -> destroy
+    android.content.Context access$0(com.ma.bus.views.BUS3001) -> access$0
+com.ma.bus.views.BUS3001$1 -> com.ma.bus.views.BUS3001$1:
+    com.ma.bus.views.BUS3001 this$0 -> this$0
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS3001$2 -> com.ma.bus.views.BUS3001$2:
+    com.ma.bus.views.BUS3001 this$0 -> this$0
+    java.lang.String val$keykeepbus -> val$keykeepbus
+    java.lang.String val$busno -> val$busno
+    java.lang.String val$actionview -> val$actionview
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS3001$3 -> com.ma.bus.views.BUS3001$3:
+    com.ma.bus.views.BUS3001 this$0 -> this$0
+    java.lang.String val$key1 -> val$key1
+    java.lang.String val$busno -> val$busno
+    android.view.View val$infoView -> val$infoView
+    void onClick(android.view.View) -> onClick
+com.ma.bus.views.BUS3001$3$1 -> com.ma.bus.views.BUS3001$3$1:
+    com.ma.bus.views.BUS3001$3 this$1 -> this$1
+    android.view.View val$infoView -> val$infoView
+    void handleMessage(android.os.Message) -> handleMessage
+com.ma.template.dao.MA_PARAMTERDAO -> com.ma.template.dao.MA_PARAMTERDAO:
+    java.lang.String getParameter(android.content.Context,java.lang.String) -> getParameter
+    java.lang.String getParameter(android.content.Context,java.lang.String,java.lang.String) -> getParameter
+    java.util.Date getParameterTime(android.content.Context,java.lang.String) -> getParameterTime
+    void setParameter(android.content.Context,java.lang.String,java.lang.String) -> setParameter
+    void removeParameter(android.content.Context,java.lang.String) -> removeParameter
+com.ma.template.pojos.MA_PARAMETERS -> com.ma.template.pojos.MA_PARAMETERS:
+    java.lang.String MA_KEY -> MA_KEY
+    java.lang.String MA_VALUE -> MA_VALUE
+    java.util.Date MA_DATA_DATE -> MA_DATA_DATE
+    java.lang.String getMA_KEY() -> getMA_KEY
+    void setMA_KEY(java.lang.String) -> setMA_KEY
+    java.lang.String getMA_VALUE() -> getMA_VALUE
+    void setMA_VALUE(java.lang.String) -> setMA_VALUE
+    java.util.Date getMA_DATA_DATE() -> getMA_DATA_DATE
+    void setMA_DATA_DATE(java.util.Date) -> setMA_DATA_DATE
+org.apache.commons.io.CopyUtils -> org.apache.commons.io.CopyUtils:
+    int DEFAULT_BUFFER_SIZE -> DEFAULT_BUFFER_SIZE
+    void copy(byte[],java.io.OutputStream) -> copy
+    void copy(byte[],java.io.Writer) -> copy
+    void copy(byte[],java.io.Writer,java.lang.String) -> copy
+    int copy(java.io.InputStream,java.io.OutputStream) -> copy
+    int copy(java.io.Reader,java.io.Writer) -> copy
+    void copy(java.io.InputStream,java.io.Writer) -> copy
+    void copy(java.io.InputStream,java.io.Writer,java.lang.String) -> copy
+    void copy(java.io.Reader,java.io.OutputStream) -> copy
+    void copy(java.lang.String,java.io.OutputStream) -> copy
+    void copy(java.lang.String,java.io.Writer) -> copy
+org.apache.commons.io.DirectoryWalker -> org.apache.commons.io.DirectoryWalker:
+    java.io.FileFilter filter -> filter
+    int depthLimit -> depthLimit
+    void walk(java.io.File,java.util.Collection) -> walk
+    void walk(java.io.File,int,java.util.Collection) -> walk
+    void checkIfCancelled(java.io.File,int,java.util.Collection) -> checkIfCancelled
+    boolean handleIsCancelled(java.io.File,int,java.util.Collection) -> handleIsCancelled
+    void handleCancelled(java.io.File,java.util.Collection,org.apache.commons.io.DirectoryWalker$CancelException) -> handleCancelled
+    void handleStart(java.io.File,java.util.Collection) -> handleStart
+    boolean handleDirectory(java.io.File,int,java.util.Collection) -> handleDirectory
+    void handleDirectoryStart(java.io.File,int,java.util.Collection) -> handleDirectoryStart
+    void handleFile(java.io.File,int,java.util.Collection) -> handleFile
+    void handleRestricted(java.io.File,int,java.util.Collection) -> handleRestricted
+    void handleDirectoryEnd(java.io.File,int,java.util.Collection) -> handleDirectoryEnd
+    void handleEnd(java.util.Collection) -> handleEnd
+org.apache.commons.io.DirectoryWalker$CancelException -> org.apache.commons.io.DirectoryWalker$CancelException:
+    long serialVersionUID -> serialVersionUID
+    java.io.File file -> file
+    int depth -> depth
+    java.io.File getFile() -> getFile
+    int getDepth() -> getDepth
+org.apache.commons.io.EndianUtils -> org.apache.commons.io.EndianUtils:
+    short swapShort(short) -> swapShort
+    int swapInteger(int) -> swapInteger
+    long swapLong(long) -> swapLong
+    float swapFloat(float) -> swapFloat
+    double swapDouble(double) -> swapDouble
+    void writeSwappedShort(byte[],int,short) -> writeSwappedShort
+    short readSwappedShort(byte[],int) -> readSwappedShort
+    int readSwappedUnsignedShort(byte[],int) -> readSwappedUnsignedShort
+    void writeSwappedInteger(byte[],int,int) -> writeSwappedInteger
+    int readSwappedInteger(byte[],int) -> readSwappedInteger
+    long readSwappedUnsignedInteger(byte[],int) -> readSwappedUnsignedInteger
+    void writeSwappedLong(byte[],int,long) -> writeSwappedLong
+    long readSwappedLong(byte[],int) -> readSwappedLong
+    void writeSwappedFloat(byte[],int,float) -> writeSwappedFloat
+    float readSwappedFloat(byte[],int) -> readSwappedFloat
+    void writeSwappedDouble(byte[],int,double) -> writeSwappedDouble
+    double readSwappedDouble(byte[],int) -> readSwappedDouble
+    void writeSwappedShort(java.io.OutputStream,short) -> writeSwappedShort
+    short readSwappedShort(java.io.InputStream) -> readSwappedShort
+    int readSwappedUnsignedShort(java.io.InputStream) -> readSwappedUnsignedShort
+    void writeSwappedInteger(java.io.OutputStream,int) -> writeSwappedInteger
+    int readSwappedInteger(java.io.InputStream) -> readSwappedInteger
+    long readSwappedUnsignedInteger(java.io.InputStream) -> readSwappedUnsignedInteger
+    void writeSwappedLong(java.io.OutputStream,long) -> writeSwappedLong
+    long readSwappedLong(java.io.InputStream) -> readSwappedLong
+    void writeSwappedFloat(java.io.OutputStream,float) -> writeSwappedFloat
+    float readSwappedFloat(java.io.InputStream) -> readSwappedFloat
+    void writeSwappedDouble(java.io.OutputStream,double) -> writeSwappedDouble
+    double readSwappedDouble(java.io.InputStream) -> readSwappedDouble
+    int read(java.io.InputStream) -> read
+org.apache.commons.io.FileCleaner -> org.apache.commons.io.FileCleaner:
+    org.apache.commons.io.FileCleaningTracker theInstance -> theInstance
+    void track(java.io.File,java.lang.Object) -> track
+    void track(java.io.File,java.lang.Object,org.apache.commons.io.FileDeleteStrategy) -> track
+    void track(java.lang.String,java.lang.Object) -> track
+    void track(java.lang.String,java.lang.Object,org.apache.commons.io.FileDeleteStrategy) -> track
+    int getTrackCount() -> getTrackCount
+    void exitWhenFinished() -> exitWhenFinished
+    org.apache.commons.io.FileCleaningTracker getInstance() -> getInstance
+org.apache.commons.io.FileCleaningTracker -> org.apache.commons.io.FileCleaningTracker:
+    java.lang.ref.ReferenceQueue q -> q
+    java.util.Collection trackers -> trackers
+    boolean exitWhenFinished -> exitWhenFinished
+    java.lang.Thread reaper -> reaper
+    void track(java.io.File,java.lang.Object) -> track
+    void track(java.io.File,java.lang.Object,org.apache.commons.io.FileDeleteStrategy) -> track
+    void track(java.lang.String,java.lang.Object) -> track
+    void track(java.lang.String,java.lang.Object,org.apache.commons.io.FileDeleteStrategy) -> track
+    void addTracker(java.lang.String,java.lang.Object,org.apache.commons.io.FileDeleteStrategy) -> addTracker
+    int getTrackCount() -> getTrackCount
+    void exitWhenFinished() -> exitWhenFinished
+org.apache.commons.io.FileCleaningTracker$Reaper -> org.apache.commons.io.FileCleaningTracker$Reaper:
+    org.apache.commons.io.FileCleaningTracker this$0 -> this$0
+    void run() -> run
+org.apache.commons.io.FileCleaningTracker$Tracker -> org.apache.commons.io.FileCleaningTracker$Tracker:
+    java.lang.String path -> path
+    org.apache.commons.io.FileDeleteStrategy deleteStrategy -> deleteStrategy
+    boolean delete() -> delete
+org.apache.commons.io.FileDeleteStrategy -> org.apache.commons.io.FileDeleteStrategy:
+    org.apache.commons.io.FileDeleteStrategy NORMAL -> NORMAL
+    org.apache.commons.io.FileDeleteStrategy FORCE -> FORCE
+    java.lang.String name -> name
+    boolean deleteQuietly(java.io.File) -> deleteQuietly
+    void delete(java.io.File) -> delete
+    boolean doDelete(java.io.File) -> doDelete
+    java.lang.String toString() -> toString
+org.apache.commons.io.FileDeleteStrategy$ForceFileDeleteStrategy -> org.apache.commons.io.FileDeleteStrategy$ForceFileDeleteStrategy:
+    boolean doDelete(java.io.File) -> doDelete
+org.apache.commons.io.FileSystemUtils -> org.apache.commons.io.FileSystemUtils:
+    org.apache.commons.io.FileSystemUtils INSTANCE -> INSTANCE
+    int INIT_PROBLEM -> INIT_PROBLEM
+    int OTHER -> OTHER
+    int WINDOWS -> WINDOWS
+    int UNIX -> UNIX
+    int POSIX_UNIX -> POSIX_UNIX
+    int OS -> OS
+    long freeSpace(java.lang.String) -> freeSpace
+    long freeSpaceKb(java.lang.String) -> freeSpaceKb
+    long freeSpaceOS(java.lang.String,int,boolean) -> freeSpaceOS
+    long freeSpaceWindows(java.lang.String) -> freeSpaceWindows
+    long parseDir(java.lang.String,java.lang.String) -> parseDir
+    long freeSpaceUnix(java.lang.String,boolean,boolean) -> freeSpaceUnix
+    long parseBytes(java.lang.String,java.lang.String) -> parseBytes
+    java.util.List performCommand(java.lang.String[],int) -> performCommand
+    java.lang.Process openProcess(java.lang.String[]) -> openProcess
+org.apache.commons.io.FileUtils -> org.apache.commons.io.FileUtils:
+    long ONE_KB -> ONE_KB
+    long ONE_MB -> ONE_MB
+    long ONE_GB -> ONE_GB
+    java.io.File[] EMPTY_FILE_ARRAY -> EMPTY_FILE_ARRAY
+    java.io.FileInputStream openInputStream(java.io.File) -> openInputStream
+    java.io.FileOutputStream openOutputStream(java.io.File) -> openOutputStream
+    java.lang.String byteCountToDisplaySize(long) -> byteCountToDisplaySize
+    void touch(java.io.File) -> touch
+    java.io.File[] convertFileCollectionToFileArray(java.util.Collection) -> convertFileCollectionToFileArray
+    void innerListFiles(java.util.Collection,java.io.File,org.apache.commons.io.filefilter.IOFileFilter) -> innerListFiles
+    java.util.Collection listFiles(java.io.File,org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter) -> listFiles
+    java.util.Iterator iterateFiles(java.io.File,org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter) -> iterateFiles
+    java.lang.String[] toSuffixes(java.lang.String[]) -> toSuffixes
+    java.util.Collection listFiles(java.io.File,java.lang.String[],boolean) -> listFiles
+    java.util.Iterator iterateFiles(java.io.File,java.lang.String[],boolean) -> iterateFiles
+    boolean contentEquals(java.io.File,java.io.File) -> contentEquals
+    java.io.File toFile(java.net.URL) -> toFile
+    java.io.File[] toFiles(java.net.URL[]) -> toFiles
+    java.net.URL[] toURLs(java.io.File[]) -> toURLs
+    void copyFileToDirectory(java.io.File,java.io.File) -> copyFileToDirectory
+    void copyFileToDirectory(java.io.File,java.io.File,boolean) -> copyFileToDirectory
+    void copyFile(java.io.File,java.io.File) -> copyFile
+    void copyFile(java.io.File,java.io.File,boolean) -> copyFile
+    void doCopyFile(java.io.File,java.io.File,boolean) -> doCopyFile
+    void copyDirectoryToDirectory(java.io.File,java.io.File) -> copyDirectoryToDirectory
+    void copyDirectory(java.io.File,java.io.File) -> copyDirectory
+    void copyDirectory(java.io.File,java.io.File,boolean) -> copyDirectory
+    void copyDirectory(java.io.File,java.io.File,java.io.FileFilter) -> copyDirectory
+    void copyDirectory(java.io.File,java.io.File,java.io.FileFilter,boolean) -> copyDirectory
+    void doCopyDirectory(java.io.File,java.io.File,java.io.FileFilter,boolean,java.util.List) -> doCopyDirectory
+    void copyURLToFile(java.net.URL,java.io.File) -> copyURLToFile
+    void deleteDirectory(java.io.File) -> deleteDirectory
+    boolean deleteQuietly(java.io.File) -> deleteQuietly
+    void cleanDirectory(java.io.File) -> cleanDirectory
+    boolean waitFor(java.io.File,int) -> waitFor
+    java.lang.String readFileToString(java.io.File,java.lang.String) -> readFileToString
+    java.lang.String readFileToString(java.io.File) -> readFileToString
+    byte[] readFileToByteArray(java.io.File) -> readFileToByteArray
+    java.util.List readLines(java.io.File,java.lang.String) -> readLines
+    java.util.List readLines(java.io.File) -> readLines
+    org.apache.commons.io.LineIterator lineIterator(java.io.File,java.lang.String) -> lineIterator
+    org.apache.commons.io.LineIterator lineIterator(java.io.File) -> lineIterator
+    void writeStringToFile(java.io.File,java.lang.String,java.lang.String) -> writeStringToFile
+    void writeStringToFile(java.io.File,java.lang.String) -> writeStringToFile
+    void writeByteArrayToFile(java.io.File,byte[]) -> writeByteArrayToFile
+    void writeLines(java.io.File,java.lang.String,java.util.Collection) -> writeLines
+    void writeLines(java.io.File,java.util.Collection) -> writeLines
+    void writeLines(java.io.File,java.lang.String,java.util.Collection,java.lang.String) -> writeLines
+    void writeLines(java.io.File,java.util.Collection,java.lang.String) -> writeLines
+    void forceDelete(java.io.File) -> forceDelete
+    void forceDeleteOnExit(java.io.File) -> forceDeleteOnExit
+    void deleteDirectoryOnExit(java.io.File) -> deleteDirectoryOnExit
+    void cleanDirectoryOnExit(java.io.File) -> cleanDirectoryOnExit
+    void forceMkdir(java.io.File) -> forceMkdir
+    long sizeOfDirectory(java.io.File) -> sizeOfDirectory
+    boolean isFileNewer(java.io.File,java.io.File) -> isFileNewer
+    boolean isFileNewer(java.io.File,java.util.Date) -> isFileNewer
+    boolean isFileNewer(java.io.File,long) -> isFileNewer
+    boolean isFileOlder(java.io.File,java.io.File) -> isFileOlder
+    boolean isFileOlder(java.io.File,java.util.Date) -> isFileOlder
+    boolean isFileOlder(java.io.File,long) -> isFileOlder
+    long checksumCRC32(java.io.File) -> checksumCRC32
+    java.util.zip.Checksum checksum(java.io.File,java.util.zip.Checksum) -> checksum
+    void moveDirectory(java.io.File,java.io.File) -> moveDirectory
+    void moveDirectoryToDirectory(java.io.File,java.io.File,boolean) -> moveDirectoryToDirectory
+    void moveFile(java.io.File,java.io.File) -> moveFile
+    void moveFileToDirectory(java.io.File,java.io.File,boolean) -> moveFileToDirectory
+    void moveToDirectory(java.io.File,java.io.File,boolean) -> moveToDirectory
+org.apache.commons.io.FilenameUtils -> org.apache.commons.io.FilenameUtils:
+    char EXTENSION_SEPARATOR -> EXTENSION_SEPARATOR
+    java.lang.String EXTENSION_SEPARATOR_STR -> EXTENSION_SEPARATOR_STR
+    char UNIX_SEPARATOR -> UNIX_SEPARATOR
+    char WINDOWS_SEPARATOR -> WINDOWS_SEPARATOR
+    char SYSTEM_SEPARATOR -> SYSTEM_SEPARATOR
+    char OTHER_SEPARATOR -> OTHER_SEPARATOR
+    boolean isSystemWindows() -> isSystemWindows
+    boolean isSeparator(char) -> isSeparator
+    java.lang.String normalize(java.lang.String) -> normalize
+    java.lang.String normalizeNoEndSeparator(java.lang.String) -> normalizeNoEndSeparator
+    java.lang.String doNormalize(java.lang.String,boolean) -> doNormalize
+    java.lang.String concat(java.lang.String,java.lang.String) -> concat
+    java.lang.String separatorsToUnix(java.lang.String) -> separatorsToUnix
+    java.lang.String separatorsToWindows(java.lang.String) -> separatorsToWindows
+    java.lang.String separatorsToSystem(java.lang.String) -> separatorsToSystem
+    int getPrefixLength(java.lang.String) -> getPrefixLength
+    int indexOfLastSeparator(java.lang.String) -> indexOfLastSeparator
+    int indexOfExtension(java.lang.String) -> indexOfExtension
+    java.lang.String getPrefix(java.lang.String) -> getPrefix
+    java.lang.String getPath(java.lang.String) -> getPath
+    java.lang.String getPathNoEndSeparator(java.lang.String) -> getPathNoEndSeparator
+    java.lang.String doGetPath(java.lang.String,int) -> doGetPath
+    java.lang.String getFullPath(java.lang.String) -> getFullPath
+    java.lang.String getFullPathNoEndSeparator(java.lang.String) -> getFullPathNoEndSeparator
+    java.lang.String doGetFullPath(java.lang.String,boolean) -> doGetFullPath
+    java.lang.String getName(java.lang.String) -> getName
+    java.lang.String getBaseName(java.lang.String) -> getBaseName
+    java.lang.String getExtension(java.lang.String) -> getExtension
+    java.lang.String removeExtension(java.lang.String) -> removeExtension
+    boolean equals(java.lang.String,java.lang.String) -> equals
+    boolean equalsOnSystem(java.lang.String,java.lang.String) -> equalsOnSystem
+    boolean equalsNormalized(java.lang.String,java.lang.String) -> equalsNormalized
+    boolean equalsNormalizedOnSystem(java.lang.String,java.lang.String) -> equalsNormalizedOnSystem
+    boolean equals(java.lang.String,java.lang.String,boolean,org.apache.commons.io.IOCase) -> equals
+    boolean isExtension(java.lang.String,java.lang.String) -> isExtension
+    boolean isExtension(java.lang.String,java.lang.String[]) -> isExtension
+    boolean isExtension(java.lang.String,java.util.Collection) -> isExtension
+    boolean wildcardMatch(java.lang.String,java.lang.String) -> wildcardMatch
+    boolean wildcardMatchOnSystem(java.lang.String,java.lang.String) -> wildcardMatchOnSystem
+    boolean wildcardMatch(java.lang.String,java.lang.String,org.apache.commons.io.IOCase) -> wildcardMatch
+    java.lang.String[] splitOnTokens(java.lang.String) -> splitOnTokens
+org.apache.commons.io.HexDump -> org.apache.commons.io.HexDump:
+    java.lang.String EOL -> EOL
+    char[] _hexcodes -> _hexcodes
+    int[] _shifts -> _shifts
+    void dump(byte[],long,java.io.OutputStream,int) -> dump
+    java.lang.StringBuffer dump(java.lang.StringBuffer,long) -> dump
+    java.lang.StringBuffer dump(java.lang.StringBuffer,byte) -> dump
+org.apache.commons.io.IOCase -> org.apache.commons.io.IOCase:
+    org.apache.commons.io.IOCase SENSITIVE -> SENSITIVE
+    org.apache.commons.io.IOCase INSENSITIVE -> INSENSITIVE
+    org.apache.commons.io.IOCase SYSTEM -> SYSTEM
+    long serialVersionUID -> serialVersionUID
+    java.lang.String name -> name
+    boolean sensitive -> sensitive
+    org.apache.commons.io.IOCase forName(java.lang.String) -> forName
+    java.lang.Object readResolve() -> readResolve
+    java.lang.String getName() -> getName
+    boolean isCaseSensitive() -> isCaseSensitive
+    int checkCompareTo(java.lang.String,java.lang.String) -> checkCompareTo
+    boolean checkEquals(java.lang.String,java.lang.String) -> checkEquals
+    boolean checkStartsWith(java.lang.String,java.lang.String) -> checkStartsWith
+    boolean checkEndsWith(java.lang.String,java.lang.String) -> checkEndsWith
+    boolean checkRegionMatches(java.lang.String,int,java.lang.String) -> checkRegionMatches
+    java.lang.String convertCase(java.lang.String) -> convertCase
+    java.lang.String toString() -> toString
+org.apache.commons.io.IOExceptionWithCause -> org.apache.commons.io.IOExceptionWithCause:
+    long serialVersionUID -> serialVersionUID
+org.apache.commons.io.IOUtils -> org.apache.commons.io.IOUtils:
+    char DIR_SEPARATOR_UNIX -> DIR_SEPARATOR_UNIX
+    char DIR_SEPARATOR_WINDOWS -> DIR_SEPARATOR_WINDOWS
+    char DIR_SEPARATOR -> DIR_SEPARATOR
+    java.lang.String LINE_SEPARATOR_UNIX -> LINE_SEPARATOR_UNIX
+    java.lang.String LINE_SEPARATOR_WINDOWS -> LINE_SEPARATOR_WINDOWS
+    java.lang.String LINE_SEPARATOR -> LINE_SEPARATOR
+    int DEFAULT_BUFFER_SIZE -> DEFAULT_BUFFER_SIZE
+    void closeQuietly(java.io.Reader) -> closeQuietly
+    void closeQuietly(java.io.Writer) -> closeQuietly
+    void closeQuietly(java.io.InputStream) -> closeQuietly
+    void closeQuietly(java.io.OutputStream) -> closeQuietly
+    byte[] toByteArray(java.io.InputStream) -> toByteArray
+    byte[] toByteArray(java.io.Reader) -> toByteArray
+    byte[] toByteArray(java.io.Reader,java.lang.String) -> toByteArray
+    byte[] toByteArray(java.lang.String) -> toByteArray
+    char[] toCharArray(java.io.InputStream) -> toCharArray
+    char[] toCharArray(java.io.InputStream,java.lang.String) -> toCharArray
+    char[] toCharArray(java.io.Reader) -> toCharArray
+    java.lang.String toString(java.io.InputStream) -> toString
+    java.lang.String toString(java.io.InputStream,java.lang.String) -> toString
+    java.lang.String toString(java.io.Reader) -> toString
+    java.lang.String toString(byte[]) -> toString
+    java.lang.String toString(byte[],java.lang.String) -> toString
+    java.util.List readLines(java.io.InputStream) -> readLines
+    java.util.List readLines(java.io.InputStream,java.lang.String) -> readLines
+    java.util.List readLines(java.io.Reader) -> readLines
+    org.apache.commons.io.LineIterator lineIterator(java.io.Reader) -> lineIterator
+    org.apache.commons.io.LineIterator lineIterator(java.io.InputStream,java.lang.String) -> lineIterator
+    java.io.InputStream toInputStream(java.lang.String) -> toInputStream
+    java.io.InputStream toInputStream(java.lang.String,java.lang.String) -> toInputStream
+    void write(byte[],java.io.OutputStream) -> write
+    void write(byte[],java.io.Writer) -> write
+    void write(byte[],java.io.Writer,java.lang.String) -> write
+    void write(char[],java.io.Writer) -> write
+    void write(char[],java.io.OutputStream) -> write
+    void write(char[],java.io.OutputStream,java.lang.String) -> write
+    void write(java.lang.String,java.io.Writer) -> write
+    void write(java.lang.String,java.io.OutputStream) -> write
+    void write(java.lang.String,java.io.OutputStream,java.lang.String) -> write
+    void write(java.lang.StringBuffer,java.io.Writer) -> write
+    void write(java.lang.StringBuffer,java.io.OutputStream) -> write
+    void write(java.lang.StringBuffer,java.io.OutputStream,java.lang.String) -> write
+    void writeLines(java.util.Collection,java.lang.String,java.io.OutputStream) -> writeLines
+    void writeLines(java.util.Collection,java.lang.String,java.io.OutputStream,java.lang.String) -> writeLines
+    void writeLines(java.util.Collection,java.lang.String,java.io.Writer) -> writeLines
+    int copy(java.io.InputStream,java.io.OutputStream) -> copy
+    long copyLarge(java.io.InputStream,java.io.OutputStream) -> copyLarge
+    void copy(java.io.InputStream,java.io.Writer) -> copy
+    void copy(java.io.InputStream,java.io.Writer,java.lang.String) -> copy
+    int copy(java.io.Reader,java.io.Writer) -> copy
+    long copyLarge(java.io.Reader,java.io.Writer) -> copyLarge
+    void copy(java.io.Reader,java.io.OutputStream) -> copy
+    void copy(java.io.Reader,java.io.OutputStream,java.lang.String) -> copy
+    boolean contentEquals(java.io.InputStream,java.io.InputStream) -> contentEquals
+    boolean contentEquals(java.io.Reader,java.io.Reader) -> contentEquals
+org.apache.commons.io.LineIterator -> org.apache.commons.io.LineIterator:
+    java.io.BufferedReader bufferedReader -> bufferedReader
+    java.lang.String cachedLine -> cachedLine
+    boolean finished -> finished
+    boolean hasNext() -> hasNext
+    boolean isValidLine(java.lang.String) -> isValidLine
+    java.lang.Object next() -> next
+    java.lang.String nextLine() -> nextLine
+    void close() -> close
+    void remove() -> remove
+    void closeQuietly(org.apache.commons.io.LineIterator) -> closeQuietly
+org.apache.commons.io.comparator.DefaultFileComparator -> org.apache.commons.io.comparator.DefaultFileComparator:
+    java.util.Comparator DEFAULT_COMPARATOR -> DEFAULT_COMPARATOR
+    java.util.Comparator DEFAULT_REVERSE -> DEFAULT_REVERSE
+    int compare(java.lang.Object,java.lang.Object) -> compare
+org.apache.commons.io.comparator.ExtensionFileComparator -> org.apache.commons.io.comparator.ExtensionFileComparator:
+    java.util.Comparator EXTENSION_COMPARATOR -> EXTENSION_COMPARATOR
+    java.util.Comparator EXTENSION_REVERSE -> EXTENSION_REVERSE
+    java.util.Comparator EXTENSION_INSENSITIVE_COMPARATOR -> EXTENSION_INSENSITIVE_COMPARATOR
+    java.util.Comparator EXTENSION_INSENSITIVE_REVERSE -> EXTENSION_INSENSITIVE_REVERSE
+    java.util.Comparator EXTENSION_SYSTEM_COMPARATOR -> EXTENSION_SYSTEM_COMPARATOR
+    java.util.Comparator EXTENSION_SYSTEM_REVERSE -> EXTENSION_SYSTEM_REVERSE
+    org.apache.commons.io.IOCase caseSensitivity -> caseSensitivity
+    int compare(java.lang.Object,java.lang.Object) -> compare
+org.apache.commons.io.comparator.LastModifiedFileComparator -> org.apache.commons.io.comparator.LastModifiedFileComparator:
+    java.util.Comparator LASTMODIFIED_COMPARATOR -> LASTMODIFIED_COMPARATOR
+    java.util.Comparator LASTMODIFIED_REVERSE -> LASTMODIFIED_REVERSE
+    int compare(java.lang.Object,java.lang.Object) -> compare
+org.apache.commons.io.comparator.NameFileComparator -> org.apache.commons.io.comparator.NameFileComparator:
+    java.util.Comparator NAME_COMPARATOR -> NAME_COMPARATOR
+    java.util.Comparator NAME_REVERSE -> NAME_REVERSE
+    java.util.Comparator NAME_INSENSITIVE_COMPARATOR -> NAME_INSENSITIVE_COMPARATOR
+    java.util.Comparator NAME_INSENSITIVE_REVERSE -> NAME_INSENSITIVE_REVERSE
+    java.util.Comparator NAME_SYSTEM_COMPARATOR -> NAME_SYSTEM_COMPARATOR
+    java.util.Comparator NAME_SYSTEM_REVERSE -> NAME_SYSTEM_REVERSE
+    org.apache.commons.io.IOCase caseSensitivity -> caseSensitivity
+    int compare(java.lang.Object,java.lang.Object) -> compare
+org.apache.commons.io.comparator.PathFileComparator -> org.apache.commons.io.comparator.PathFileComparator:
+    java.util.Comparator PATH_COMPARATOR -> PATH_COMPARATOR
+    java.util.Comparator PATH_REVERSE -> PATH_REVERSE
+    java.util.Comparator PATH_INSENSITIVE_COMPARATOR -> PATH_INSENSITIVE_COMPARATOR
+    java.util.Comparator PATH_INSENSITIVE_REVERSE -> PATH_INSENSITIVE_REVERSE
+    java.util.Comparator PATH_SYSTEM_COMPARATOR -> PATH_SYSTEM_COMPARATOR
+    java.util.Comparator PATH_SYSTEM_REVERSE -> PATH_SYSTEM_REVERSE
+    org.apache.commons.io.IOCase caseSensitivity -> caseSensitivity
+    int compare(java.lang.Object,java.lang.Object) -> compare
+org.apache.commons.io.comparator.ReverseComparator -> org.apache.commons.io.comparator.ReverseComparator:
+    java.util.Comparator delegate -> delegate
+    int compare(java.lang.Object,java.lang.Object) -> compare
+org.apache.commons.io.comparator.SizeFileComparator -> org.apache.commons.io.comparator.SizeFileComparator:
+    java.util.Comparator SIZE_COMPARATOR -> SIZE_COMPARATOR
+    java.util.Comparator SIZE_REVERSE -> SIZE_REVERSE
+    java.util.Comparator SIZE_SUMDIR_COMPARATOR -> SIZE_SUMDIR_COMPARATOR
+    java.util.Comparator SIZE_SUMDIR_REVERSE -> SIZE_SUMDIR_REVERSE
+    boolean sumDirectoryContents -> sumDirectoryContents
+    int compare(java.lang.Object,java.lang.Object) -> compare
+org.apache.commons.io.filefilter.AbstractFileFilter -> org.apache.commons.io.filefilter.AbstractFileFilter:
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.AgeFileFilter -> org.apache.commons.io.filefilter.AgeFileFilter:
+    long cutoff -> cutoff
+    boolean acceptOlder -> acceptOlder
+    boolean accept(java.io.File) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.AndFileFilter -> org.apache.commons.io.filefilter.AndFileFilter:
+    java.util.List fileFilters -> fileFilters
+    void addFileFilter(org.apache.commons.io.filefilter.IOFileFilter) -> addFileFilter
+    java.util.List getFileFilters() -> getFileFilters
+    boolean removeFileFilter(org.apache.commons.io.filefilter.IOFileFilter) -> removeFileFilter
+    void setFileFilters(java.util.List) -> setFileFilters
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.CanReadFileFilter -> org.apache.commons.io.filefilter.CanReadFileFilter:
+    org.apache.commons.io.filefilter.IOFileFilter CAN_READ -> CAN_READ
+    org.apache.commons.io.filefilter.IOFileFilter CANNOT_READ -> CANNOT_READ
+    org.apache.commons.io.filefilter.IOFileFilter READ_ONLY -> READ_ONLY
+    boolean accept(java.io.File) -> accept
+org.apache.commons.io.filefilter.CanWriteFileFilter -> org.apache.commons.io.filefilter.CanWriteFileFilter:
+    org.apache.commons.io.filefilter.IOFileFilter CAN_WRITE -> CAN_WRITE
+    org.apache.commons.io.filefilter.IOFileFilter CANNOT_WRITE -> CANNOT_WRITE
+    boolean accept(java.io.File) -> accept
+org.apache.commons.io.filefilter.ConditionalFileFilter -> org.apache.commons.io.filefilter.ConditionalFileFilter:
+    void addFileFilter(org.apache.commons.io.filefilter.IOFileFilter) -> addFileFilter
+    java.util.List getFileFilters() -> getFileFilters
+    boolean removeFileFilter(org.apache.commons.io.filefilter.IOFileFilter) -> removeFileFilter
+    void setFileFilters(java.util.List) -> setFileFilters
+org.apache.commons.io.filefilter.DelegateFileFilter -> org.apache.commons.io.filefilter.DelegateFileFilter:
+    java.io.FilenameFilter filenameFilter -> filenameFilter
+    java.io.FileFilter fileFilter -> fileFilter
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.DirectoryFileFilter -> org.apache.commons.io.filefilter.DirectoryFileFilter:
+    org.apache.commons.io.filefilter.IOFileFilter DIRECTORY -> DIRECTORY
+    org.apache.commons.io.filefilter.IOFileFilter INSTANCE -> INSTANCE
+    boolean accept(java.io.File) -> accept
+org.apache.commons.io.filefilter.EmptyFileFilter -> org.apache.commons.io.filefilter.EmptyFileFilter:
+    org.apache.commons.io.filefilter.IOFileFilter EMPTY -> EMPTY
+    org.apache.commons.io.filefilter.IOFileFilter NOT_EMPTY -> NOT_EMPTY
+    boolean accept(java.io.File) -> accept
+org.apache.commons.io.filefilter.FalseFileFilter -> org.apache.commons.io.filefilter.FalseFileFilter:
+    org.apache.commons.io.filefilter.IOFileFilter FALSE -> FALSE
+    org.apache.commons.io.filefilter.IOFileFilter INSTANCE -> INSTANCE
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+org.apache.commons.io.filefilter.FileFileFilter -> org.apache.commons.io.filefilter.FileFileFilter:
+    org.apache.commons.io.filefilter.IOFileFilter FILE -> FILE
+    boolean accept(java.io.File) -> accept
+org.apache.commons.io.filefilter.FileFilterUtils -> org.apache.commons.io.filefilter.FileFilterUtils:
+    org.apache.commons.io.filefilter.IOFileFilter cvsFilter -> cvsFilter
+    org.apache.commons.io.filefilter.IOFileFilter svnFilter -> svnFilter
+    org.apache.commons.io.filefilter.IOFileFilter prefixFileFilter(java.lang.String) -> prefixFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter suffixFileFilter(java.lang.String) -> suffixFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter nameFileFilter(java.lang.String) -> nameFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter directoryFileFilter() -> directoryFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter fileFileFilter() -> fileFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter andFileFilter(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter) -> andFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter orFileFilter(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter) -> orFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter notFileFilter(org.apache.commons.io.filefilter.IOFileFilter) -> notFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter trueFileFilter() -> trueFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter falseFileFilter() -> falseFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter asFileFilter(java.io.FileFilter) -> asFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter asFileFilter(java.io.FilenameFilter) -> asFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(long) -> ageFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(long,boolean) -> ageFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(java.util.Date) -> ageFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(java.util.Date,boolean) -> ageFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(java.io.File) -> ageFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(java.io.File,boolean) -> ageFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter sizeFileFilter(long) -> sizeFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter sizeFileFilter(long,boolean) -> sizeFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter sizeRangeFileFilter(long,long) -> sizeRangeFileFilter
+    org.apache.commons.io.filefilter.IOFileFilter makeCVSAware(org.apache.commons.io.filefilter.IOFileFilter) -> makeCVSAware
+    org.apache.commons.io.filefilter.IOFileFilter makeSVNAware(org.apache.commons.io.filefilter.IOFileFilter) -> makeSVNAware
+    org.apache.commons.io.filefilter.IOFileFilter makeDirectoryOnly(org.apache.commons.io.filefilter.IOFileFilter) -> makeDirectoryOnly
+    org.apache.commons.io.filefilter.IOFileFilter makeFileOnly(org.apache.commons.io.filefilter.IOFileFilter) -> makeFileOnly
+org.apache.commons.io.filefilter.HiddenFileFilter -> org.apache.commons.io.filefilter.HiddenFileFilter:
+    org.apache.commons.io.filefilter.IOFileFilter HIDDEN -> HIDDEN
+    org.apache.commons.io.filefilter.IOFileFilter VISIBLE -> VISIBLE
+    boolean accept(java.io.File) -> accept
+org.apache.commons.io.filefilter.IOFileFilter -> org.apache.commons.io.filefilter.IOFileFilter:
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+org.apache.commons.io.filefilter.NameFileFilter -> org.apache.commons.io.filefilter.NameFileFilter:
+    java.lang.String[] names -> names
+    org.apache.commons.io.IOCase caseSensitivity -> caseSensitivity
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.NotFileFilter -> org.apache.commons.io.filefilter.NotFileFilter:
+    org.apache.commons.io.filefilter.IOFileFilter filter -> filter
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.OrFileFilter -> org.apache.commons.io.filefilter.OrFileFilter:
+    java.util.List fileFilters -> fileFilters
+    void addFileFilter(org.apache.commons.io.filefilter.IOFileFilter) -> addFileFilter
+    java.util.List getFileFilters() -> getFileFilters
+    boolean removeFileFilter(org.apache.commons.io.filefilter.IOFileFilter) -> removeFileFilter
+    void setFileFilters(java.util.List) -> setFileFilters
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.PrefixFileFilter -> org.apache.commons.io.filefilter.PrefixFileFilter:
+    java.lang.String[] prefixes -> prefixes
+    org.apache.commons.io.IOCase caseSensitivity -> caseSensitivity
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.RegexFileFilter -> org.apache.commons.io.filefilter.RegexFileFilter:
+    java.util.regex.Pattern pattern -> pattern
+    boolean accept(java.io.File,java.lang.String) -> accept
+org.apache.commons.io.filefilter.SizeFileFilter -> org.apache.commons.io.filefilter.SizeFileFilter:
+    long size -> size
+    boolean acceptLarger -> acceptLarger
+    boolean accept(java.io.File) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.SuffixFileFilter -> org.apache.commons.io.filefilter.SuffixFileFilter:
+    java.lang.String[] suffixes -> suffixes
+    org.apache.commons.io.IOCase caseSensitivity -> caseSensitivity
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.TrueFileFilter -> org.apache.commons.io.filefilter.TrueFileFilter:
+    org.apache.commons.io.filefilter.IOFileFilter TRUE -> TRUE
+    org.apache.commons.io.filefilter.IOFileFilter INSTANCE -> INSTANCE
+    boolean accept(java.io.File) -> accept
+    boolean accept(java.io.File,java.lang.String) -> accept
+org.apache.commons.io.filefilter.WildcardFileFilter -> org.apache.commons.io.filefilter.WildcardFileFilter:
+    java.lang.String[] wildcards -> wildcards
+    org.apache.commons.io.IOCase caseSensitivity -> caseSensitivity
+    boolean accept(java.io.File,java.lang.String) -> accept
+    boolean accept(java.io.File) -> accept
+    java.lang.String toString() -> toString
+org.apache.commons.io.filefilter.WildcardFilter -> org.apache.commons.io.filefilter.WildcardFilter:
+    java.lang.String[] wildcards -> wildcards
+    boolean accept(java.io.File,java.lang.String) -> accept
+    boolean accept(java.io.File) -> accept
+org.apache.commons.io.input.AutoCloseInputStream -> org.apache.commons.io.input.AutoCloseInputStream:
+    void close() -> close
+    int read() -> read
+    int read(byte[]) -> read
+    int read(byte[],int,int) -> read
+    void finalize() -> finalize
+org.apache.commons.io.input.CharSequenceReader -> org.apache.commons.io.input.CharSequenceReader:
+    java.lang.CharSequence charSequence -> charSequence
+    int idx -> idx
+    int mark -> mark
+    void close() -> close
+    void mark(int) -> mark
+    boolean markSupported() -> markSupported
+    int read() -> read
+    int read(char[],int,int) -> read
+    void reset() -> reset
+    long skip(long) -> skip
+    java.lang.String toString() -> toString
+org.apache.commons.io.input.ClassLoaderObjectInputStream -> org.apache.commons.io.input.ClassLoaderObjectInputStream:
+    java.lang.ClassLoader classLoader -> classLoader
+    java.lang.Class resolveClass(java.io.ObjectStreamClass) -> resolveClass
+org.apache.commons.io.input.CloseShieldInputStream -> org.apache.commons.io.input.CloseShieldInputStream:
+    void close() -> close
+org.apache.commons.io.input.ClosedInputStream -> org.apache.commons.io.input.ClosedInputStream:
+    org.apache.commons.io.input.ClosedInputStream CLOSED_INPUT_STREAM -> CLOSED_INPUT_STREAM
+    int read() -> read
+org.apache.commons.io.input.CountingInputStream -> org.apache.commons.io.input.CountingInputStream:
+    long count -> count
+    int read(byte[]) -> read
+    int read(byte[],int,int) -> read
+    int read() -> read
+    long skip(long) -> skip
+    int getCount() -> getCount
+    int resetCount() -> resetCount
+    long getByteCount() -> getByteCount
+    long resetByteCount() -> resetByteCount
+org.apache.commons.io.input.DemuxInputStream -> org.apache.commons.io.input.DemuxInputStream:
+    java.lang.InheritableThreadLocal m_streams -> m_streams
+    java.io.InputStream bindStream(java.io.InputStream) -> bindStream
+    void close() -> close
+    int read() -> read
+    java.io.InputStream getStream() -> getStream
+org.apache.commons.io.input.NullInputStream -> org.apache.commons.io.input.NullInputStream:
+    long size -> size
+    long position -> position
+    long mark -> mark
+    long readlimit -> readlimit
+    boolean eof -> eof
+    boolean throwEofException -> throwEofException
+    boolean markSupported -> markSupported
+    long getPosition() -> getPosition
+    long getSize() -> getSize
+    int available() -> available
+    void close() -> close
+    void mark(int) -> mark
+    boolean markSupported() -> markSupported
+    int read() -> read
+    int read(byte[]) -> read
+    int read(byte[],int,int) -> read
+    void reset() -> reset
+    long skip(long) -> skip
+    int processByte() -> processByte
+    void processBytes(byte[],int,int) -> processBytes
+    int doEndOfFile() -> doEndOfFile
+org.apache.commons.io.input.NullReader -> org.apache.commons.io.input.NullReader:
+    long size -> size
+    long position -> position
+    long mark -> mark
+    long readlimit -> readlimit
+    boolean eof -> eof
+    boolean throwEofException -> throwEofException
+    boolean markSupported -> markSupported
+    long getPosition() -> getPosition
+    long getSize() -> getSize
+    void close() -> close
+    void mark(int) -> mark
+    boolean markSupported() -> markSupported
+    int read() -> read
+    int read(char[]) -> read
+    int read(char[],int,int) -> read
+    void reset() -> reset
+    long skip(long) -> skip
+    int processChar() -> processChar
+    void processChars(char[],int,int) -> processChars
+    int doEndOfFile() -> doEndOfFile
+org.apache.commons.io.input.ProxyInputStream -> org.apache.commons.io.input.ProxyInputStream:
+    int read() -> read
+    int read(byte[]) -> read
+    int read(byte[],int,int) -> read
+    long skip(long) -> skip
+    int available() -> available
+    void close() -> close
+    void mark(int) -> mark
+    void reset() -> reset
+    boolean markSupported() -> markSupported
+org.apache.commons.io.input.ProxyReader -> org.apache.commons.io.input.ProxyReader:
+    int read() -> read
+    int read(char[]) -> read
+    int read(char[],int,int) -> read
+    long skip(long) -> skip
+    boolean ready() -> ready
+    void close() -> close
+    void mark(int) -> mark
+    void reset() -> reset
+    boolean markSupported() -> markSupported
+org.apache.commons.io.input.SwappedDataInputStream -> org.apache.commons.io.input.SwappedDataInputStream:
+    boolean readBoolean() -> readBoolean
+    byte readByte() -> readByte
+    char readChar() -> readChar
+    double readDouble() -> readDouble
+    float readFloat() -> readFloat
+    void readFully(byte[]) -> readFully
+    void readFully(byte[],int,int) -> readFully
+    int readInt() -> readInt
+    java.lang.String readLine() -> readLine
+    long readLong() -> readLong
+    short readShort() -> readShort
+    int readUnsignedByte() -> readUnsignedByte
+    int readUnsignedShort() -> readUnsignedShort
+    java.lang.String readUTF() -> readUTF
+    int skipBytes(int) -> skipBytes
+org.apache.commons.io.input.TeeInputStream -> org.apache.commons.io.input.TeeInputStream:
+    java.io.OutputStream branch -> branch
+    boolean closeBranch -> closeBranch
+    void close() -> close
+    int read() -> read
+    int read(byte[],int,int) -> read
+    int read(byte[]) -> read
+org.apache.commons.io.output.ByteArrayOutputStream -> org.apache.commons.io.output.ByteArrayOutputStream:
+    byte[] EMPTY_BYTE_ARRAY -> EMPTY_BYTE_ARRAY
+    java.util.List buffers -> buffers
+    int currentBufferIndex -> currentBufferIndex
+    int filledBufferSum -> filledBufferSum
+    byte[] currentBuffer -> currentBuffer
+    int count -> count
+    byte[] getBuffer(int) -> getBuffer
+    void needNewBuffer(int) -> needNewBuffer
+    void write(byte[],int,int) -> write
+    void write(int) -> write
+    int write(java.io.InputStream) -> write
+    int size() -> size
+    void close() -> close
+    void reset() -> reset
+    void writeTo(java.io.OutputStream) -> writeTo
+    byte[] toByteArray() -> toByteArray
+    java.lang.String toString() -> toString
+    java.lang.String toString(java.lang.String) -> toString
+org.apache.commons.io.output.CloseShieldOutputStream -> org.apache.commons.io.output.CloseShieldOutputStream:
+    void close() -> close
+org.apache.commons.io.output.ClosedOutputStream -> org.apache.commons.io.output.ClosedOutputStream:
+    org.apache.commons.io.output.ClosedOutputStream CLOSED_OUTPUT_STREAM -> CLOSED_OUTPUT_STREAM
+    void write(int) -> write
+org.apache.commons.io.output.CountingOutputStream -> org.apache.commons.io.output.CountingOutputStream:
+    long count -> count
+    void write(byte[]) -> write
+    void write(byte[],int,int) -> write
+    void write(int) -> write
+    int getCount() -> getCount
+    int resetCount() -> resetCount
+    long getByteCount() -> getByteCount
+    long resetByteCount() -> resetByteCount
+org.apache.commons.io.output.DeferredFileOutputStream -> org.apache.commons.io.output.DeferredFileOutputStream:
+    org.apache.commons.io.output.ByteArrayOutputStream memoryOutputStream -> memoryOutputStream
+    java.io.OutputStream currentOutputStream -> currentOutputStream
+    java.io.File outputFile -> outputFile
+    java.lang.String prefix -> prefix
+    java.lang.String suffix -> suffix
+    java.io.File directory -> directory
+    boolean closed -> closed
+    java.io.OutputStream getStream() -> getStream
+    void thresholdReached() -> thresholdReached
+    boolean isInMemory() -> isInMemory
+    byte[] getData() -> getData
+    java.io.File getFile() -> getFile
+    void close() -> close
+    void writeTo(java.io.OutputStream) -> writeTo
+org.apache.commons.io.output.DemuxOutputStream -> org.apache.commons.io.output.DemuxOutputStream:
+    java.lang.InheritableThreadLocal m_streams -> m_streams
+    java.io.OutputStream bindStream(java.io.OutputStream) -> bindStream
+    void close() -> close
+    void flush() -> flush
+    void write(int) -> write
+    java.io.OutputStream getStream() -> getStream
+org.apache.commons.io.output.FileWriterWithEncoding -> org.apache.commons.io.output.FileWriterWithEncoding:
+    java.io.Writer out -> out
+    java.io.Writer initWriter(java.io.File,java.lang.Object,boolean) -> initWriter
+    void write(int) -> write
+    void write(char[]) -> write
+    void write(char[],int,int) -> write
+    void write(java.lang.String) -> write
+    void write(java.lang.String,int,int) -> write
+    void flush() -> flush
+    void close() -> close
+org.apache.commons.io.output.LockableFileWriter -> org.apache.commons.io.output.LockableFileWriter:
+    java.lang.String LCK -> LCK
+    java.io.Writer out -> out
+    java.io.File lockFile -> lockFile
+    java.lang.Class class$org$apache$commons$io$output$LockableFileWriter -> class$org$apache$commons$io$output$LockableFileWriter
+    void testLockDir(java.io.File) -> testLockDir
+    void createLock() -> createLock
+    java.io.Writer initWriter(java.io.File,java.lang.String,boolean) -> initWriter
+    void close() -> close
+    void write(int) -> write
+    void write(char[]) -> write
+    void write(char[],int,int) -> write
+    void write(java.lang.String) -> write
+    void write(java.lang.String,int,int) -> write
+    void flush() -> flush
+    java.lang.Class class$(java.lang.String) -> class$
+org.apache.commons.io.output.NullOutputStream -> org.apache.commons.io.output.NullOutputStream:
+    org.apache.commons.io.output.NullOutputStream NULL_OUTPUT_STREAM -> NULL_OUTPUT_STREAM
+    void write(byte[],int,int) -> write
+    void write(int) -> write
+    void write(byte[]) -> write
+org.apache.commons.io.output.NullWriter -> org.apache.commons.io.output.NullWriter:
+    org.apache.commons.io.output.NullWriter NULL_WRITER -> NULL_WRITER
+    void write(int) -> write
+    void write(char[]) -> write
+    void write(char[],int,int) -> write
+    void write(java.lang.String) -> write
+    void write(java.lang.String,int,int) -> write
+    void flush() -> flush
+    void close() -> close
+org.apache.commons.io.output.ProxyOutputStream -> org.apache.commons.io.output.ProxyOutputStream:
+    void write(int) -> write
+    void write(byte[]) -> write
+    void write(byte[],int,int) -> write
+    void flush() -> flush
+    void close() -> close
+org.apache.commons.io.output.ProxyWriter -> org.apache.commons.io.output.ProxyWriter:
+    void write(int) -> write
+    void write(char[]) -> write
+    void write(char[],int,int) -> write
+    void write(java.lang.String) -> write
+    void write(java.lang.String,int,int) -> write
+    void flush() -> flush
+    void close() -> close
+org.apache.commons.io.output.TeeOutputStream -> org.apache.commons.io.output.TeeOutputStream:
+    java.io.OutputStream branch -> branch
+    void write(byte[]) -> write
+    void write(byte[],int,int) -> write
+    void write(int) -> write
+    void flush() -> flush
+    void close() -> close
+org.apache.commons.io.output.ThresholdingOutputStream -> org.apache.commons.io.output.ThresholdingOutputStream:
+    int threshold -> threshold
+    long written -> written
+    boolean thresholdExceeded -> thresholdExceeded
+    void write(int) -> write
+    void write(byte[]) -> write
+    void write(byte[],int,int) -> write
+    void flush() -> flush
+    void close() -> close
+    int getThreshold() -> getThreshold
+    long getByteCount() -> getByteCount
+    boolean isThresholdExceeded() -> isThresholdExceeded
+    void checkThreshold(int) -> checkThreshold
+    void resetByteCount() -> resetByteCount
+    java.io.OutputStream getStream() -> getStream
+    void thresholdReached() -> thresholdReached
+org.jsoup.Connection -> org.jsoup.Connection:
+    org.jsoup.Connection url(java.net.URL) -> url
+    org.jsoup.Connection url(java.lang.String) -> url
+    org.jsoup.Connection userAgent(java.lang.String) -> userAgent
+    org.jsoup.Connection timeout(int) -> timeout
+    org.jsoup.Connection referrer(java.lang.String) -> referrer
+    org.jsoup.Connection followRedirects(boolean) -> followRedirects
+    org.jsoup.Connection method(org.jsoup.Connection$Method) -> method
+    org.jsoup.Connection ignoreHttpErrors(boolean) -> ignoreHttpErrors
+    org.jsoup.Connection ignoreContentType(boolean) -> ignoreContentType
+    org.jsoup.Connection data(java.lang.String,java.lang.String) -> data
+    org.jsoup.Connection data(java.util.Map) -> data
+    org.jsoup.Connection data(java.lang.String[]) -> data
+    org.jsoup.Connection header(java.lang.String,java.lang.String) -> header
+    org.jsoup.Connection cookie(java.lang.String,java.lang.String) -> cookie
+    org.jsoup.Connection cookies(java.util.Map) -> cookies
+    org.jsoup.Connection parser(org.jsoup.parser.Parser) -> parser
+    org.jsoup.nodes.Document get() -> get
+    org.jsoup.nodes.Document post() -> post
+    org.jsoup.Connection$Response execute() -> execute
+    org.jsoup.Connection$Request request() -> request
+    org.jsoup.Connection request(org.jsoup.Connection$Request) -> request
+    org.jsoup.Connection$Response response() -> response
+    org.jsoup.Connection response(org.jsoup.Connection$Response) -> response
+org.jsoup.Connection$Base -> org.jsoup.Connection$Base:
+    java.net.URL url() -> url
+    org.jsoup.Connection$Base url(java.net.URL) -> url
+    org.jsoup.Connection$Method method() -> method
+    org.jsoup.Connection$Base method(org.jsoup.Connection$Method) -> method
+    java.lang.String header(java.lang.String) -> header
+    org.jsoup.Connection$Base header(java.lang.String,java.lang.String) -> header
+    boolean hasHeader(java.lang.String) -> hasHeader
+    org.jsoup.Connection$Base removeHeader(java.lang.String) -> removeHeader
+    java.util.Map headers() -> headers
+    java.lang.String cookie(java.lang.String) -> cookie
+    org.jsoup.Connection$Base cookie(java.lang.String,java.lang.String) -> cookie
+    boolean hasCookie(java.lang.String) -> hasCookie
+    org.jsoup.Connection$Base removeCookie(java.lang.String) -> removeCookie
+    java.util.Map cookies() -> cookies
+org.jsoup.Connection$KeyVal -> org.jsoup.Connection$KeyVal:
+    org.jsoup.Connection$KeyVal key(java.lang.String) -> key
+    java.lang.String key() -> key
+    org.jsoup.Connection$KeyVal value(java.lang.String) -> value
+    java.lang.String value() -> value
+org.jsoup.Connection$Method -> org.jsoup.Connection$Method:
+    org.jsoup.Connection$Method GET -> GET
+    org.jsoup.Connection$Method POST -> POST
+    org.jsoup.Connection$Method[] $VALUES -> $VALUES
+    org.jsoup.Connection$Method[] values() -> values
+    org.jsoup.Connection$Method valueOf(java.lang.String) -> valueOf
+org.jsoup.Connection$Request -> org.jsoup.Connection$Request:
+    int timeout() -> timeout
+    org.jsoup.Connection$Request timeout(int) -> timeout
+    boolean followRedirects() -> followRedirects
+    org.jsoup.Connection$Request followRedirects(boolean) -> followRedirects
+    boolean ignoreHttpErrors() -> ignoreHttpErrors
+    org.jsoup.Connection$Request ignoreHttpErrors(boolean) -> ignoreHttpErrors
+    boolean ignoreContentType() -> ignoreContentType
+    org.jsoup.Connection$Request ignoreContentType(boolean) -> ignoreContentType
+    org.jsoup.Connection$Request data(org.jsoup.Connection$KeyVal) -> data
+    java.util.Collection data() -> data
+    org.jsoup.Connection$Request parser(org.jsoup.parser.Parser) -> parser
+    org.jsoup.parser.Parser parser() -> parser
+org.jsoup.Connection$Response -> org.jsoup.Connection$Response:
+    int statusCode() -> statusCode
+    java.lang.String statusMessage() -> statusMessage
+    java.lang.String charset() -> charset
+    java.lang.String contentType() -> contentType
+    org.jsoup.nodes.Document parse() -> parse
+    java.lang.String body() -> body
+    byte[] bodyAsBytes() -> bodyAsBytes
+org.jsoup.HttpStatusException -> org.jsoup.HttpStatusException:
+    int statusCode -> statusCode
+    java.lang.String url -> url
+    int getStatusCode() -> getStatusCode
+    java.lang.String getUrl() -> getUrl
+    java.lang.String toString() -> toString
+org.jsoup.Jsoup -> org.jsoup.Jsoup:
+    org.jsoup.nodes.Document parse(java.lang.String,java.lang.String) -> parse
+    org.jsoup.nodes.Document parse(java.lang.String,java.lang.String,org.jsoup.parser.Parser) -> parse
+    org.jsoup.nodes.Document parse(java.lang.String) -> parse
+    org.jsoup.Connection connect(java.lang.String) -> connect
+    org.jsoup.nodes.Document parse(java.io.File,java.lang.String,java.lang.String) -> parse
+    org.jsoup.nodes.Document parse(java.io.File,java.lang.String) -> parse
+    org.jsoup.nodes.Document parse(java.io.InputStream,java.lang.String,java.lang.String) -> parse
+    org.jsoup.nodes.Document parse(java.io.InputStream,java.lang.String,java.lang.String,org.jsoup.parser.Parser) -> parse
+    org.jsoup.nodes.Document parseBodyFragment(java.lang.String,java.lang.String) -> parseBodyFragment
+    org.jsoup.nodes.Document parseBodyFragment(java.lang.String) -> parseBodyFragment
+    org.jsoup.nodes.Document parse(java.net.URL,int) -> parse
+    java.lang.String clean(java.lang.String,java.lang.String,org.jsoup.safety.Whitelist) -> clean
+    java.lang.String clean(java.lang.String,org.jsoup.safety.Whitelist) -> clean
+    java.lang.String clean(java.lang.String,java.lang.String,org.jsoup.safety.Whitelist,org.jsoup.nodes.Document$OutputSettings) -> clean
+    boolean isValid(java.lang.String,org.jsoup.safety.Whitelist) -> isValid
+org.jsoup.UnsupportedMimeTypeException -> org.jsoup.UnsupportedMimeTypeException:
+    java.lang.String mimeType -> mimeType
+    java.lang.String url -> url
+    java.lang.String getMimeType() -> getMimeType
+    java.lang.String getUrl() -> getUrl
+    java.lang.String toString() -> toString
+org.jsoup.examples.HtmlToPlainText -> org.jsoup.examples.HtmlToPlainText:
+    void main(java.lang.String[]) -> main
+    java.lang.String getPlainText(org.jsoup.nodes.Element) -> getPlainText
+org.jsoup.examples.HtmlToPlainText$1 -> org.jsoup.examples.HtmlToPlainText$1:
+org.jsoup.examples.HtmlToPlainText$FormattingVisitor -> org.jsoup.examples.HtmlToPlainText$FormattingVisitor:
+    int maxWidth -> maxWidth
+    int width -> width
+    java.lang.StringBuilder accum -> accum
+    org.jsoup.examples.HtmlToPlainText this$0 -> this$0
+    void head(org.jsoup.nodes.Node,int) -> head
+    void tail(org.jsoup.nodes.Node,int) -> tail
+    void append(java.lang.String) -> append
+    java.lang.String toString() -> toString
+org.jsoup.examples.ListLinks -> org.jsoup.examples.ListLinks:
+    void main(java.lang.String[]) -> main
+    void print(java.lang.String,java.lang.Object[]) -> print
+    java.lang.String trim(java.lang.String,int) -> trim
+org.jsoup.helper.DataUtil -> org.jsoup.helper.DataUtil:
+    java.util.regex.Pattern charsetPattern -> charsetPattern
+    java.lang.String defaultCharset -> defaultCharset
+    int bufferSize -> bufferSize
+    org.jsoup.nodes.Document load(java.io.File,java.lang.String,java.lang.String) -> load
+    org.jsoup.nodes.Document load(java.io.InputStream,java.lang.String,java.lang.String) -> load
+    org.jsoup.nodes.Document load(java.io.InputStream,java.lang.String,java.lang.String,org.jsoup.parser.Parser) -> load
+    org.jsoup.nodes.Document parseByteData(java.nio.ByteBuffer,java.lang.String,java.lang.String,org.jsoup.parser.Parser) -> parseByteData
+    java.nio.ByteBuffer readToByteBuffer(java.io.InputStream) -> readToByteBuffer
+    java.lang.String getCharsetFromContentType(java.lang.String) -> getCharsetFromContentType
+org.jsoup.helper.DescendableLinkedList -> org.jsoup.helper.DescendableLinkedList:
+    void push(java.lang.Object) -> push
+    java.lang.Object peekLast() -> peekLast
+    java.lang.Object pollLast() -> pollLast
+    java.util.Iterator descendingIterator() -> descendingIterator
+org.jsoup.helper.DescendableLinkedList$1 -> org.jsoup.helper.DescendableLinkedList$1:
+org.jsoup.helper.DescendableLinkedList$DescendingIterator -> org.jsoup.helper.DescendableLinkedList$DescendingIterator:
+    java.util.ListIterator iter -> iter
+    org.jsoup.helper.DescendableLinkedList this$0 -> this$0
+    boolean hasNext() -> hasNext
+    java.lang.Object next() -> next
+    void remove() -> remove
+org.jsoup.helper.HttpConnection -> org.jsoup.helper.HttpConnection:
+    org.jsoup.Connection$Request req -> req
+    org.jsoup.Connection$Response res -> res
+    org.jsoup.Connection connect(java.lang.String) -> connect
+    org.jsoup.Connection connect(java.net.URL) -> connect
+    org.jsoup.Connection url(java.net.URL) -> url
+    org.jsoup.Connection url(java.lang.String) -> url
+    org.jsoup.Connection userAgent(java.lang.String) -> userAgent
+    org.jsoup.Connection timeout(int) -> timeout
+    org.jsoup.Connection followRedirects(boolean) -> followRedirects
+    org.jsoup.Connection referrer(java.lang.String) -> referrer
+    org.jsoup.Connection method(org.jsoup.Connection$Method) -> method
+    org.jsoup.Connection ignoreHttpErrors(boolean) -> ignoreHttpErrors
+    org.jsoup.Connection ignoreContentType(boolean) -> ignoreContentType
+    org.jsoup.Connection data(java.lang.String,java.lang.String) -> data
+    org.jsoup.Connection data(java.util.Map) -> data
+    org.jsoup.Connection data(java.lang.String[]) -> data
+    org.jsoup.Connection header(java.lang.String,java.lang.String) -> header
+    org.jsoup.Connection cookie(java.lang.String,java.lang.String) -> cookie
+    org.jsoup.Connection cookies(java.util.Map) -> cookies
+    org.jsoup.Connection parser(org.jsoup.parser.Parser) -> parser
+    org.jsoup.nodes.Document get() -> get
+    org.jsoup.nodes.Document post() -> post
+    org.jsoup.Connection$Response execute() -> execute
+    org.jsoup.Connection$Request request() -> request
+    org.jsoup.Connection request(org.jsoup.Connection$Request) -> request
+    org.jsoup.Connection$Response response() -> response
+    org.jsoup.Connection response(org.jsoup.Connection$Response) -> response
+org.jsoup.helper.HttpConnection$1 -> org.jsoup.helper.HttpConnection$1:
+org.jsoup.helper.HttpConnection$Base -> org.jsoup.helper.HttpConnection$Base:
+    java.net.URL url -> url
+    org.jsoup.Connection$Method method -> method
+    java.util.Map headers -> headers
+    java.util.Map cookies -> cookies
+    java.net.URL url() -> url
+    org.jsoup.Connection$Base url(java.net.URL) -> url
+    org.jsoup.Connection$Method method() -> method
+    org.jsoup.Connection$Base method(org.jsoup.Connection$Method) -> method
+    java.lang.String header(java.lang.String) -> header
+    org.jsoup.Connection$Base header(java.lang.String,java.lang.String) -> header
+    boolean hasHeader(java.lang.String) -> hasHeader
+    org.jsoup.Connection$Base removeHeader(java.lang.String) -> removeHeader
+    java.util.Map headers() -> headers
+    java.lang.String getHeaderCaseInsensitive(java.lang.String) -> getHeaderCaseInsensitive
+    java.util.Map$Entry scanHeaders(java.lang.String) -> scanHeaders
+    java.lang.String cookie(java.lang.String) -> cookie
+    org.jsoup.Connection$Base cookie(java.lang.String,java.lang.String) -> cookie
+    boolean hasCookie(java.lang.String) -> hasCookie
+    org.jsoup.Connection$Base removeCookie(java.lang.String) -> removeCookie
+    java.util.Map cookies() -> cookies
+org.jsoup.helper.HttpConnection$KeyVal -> org.jsoup.helper.HttpConnection$KeyVal:
+    java.lang.String key -> key
+    java.lang.String value -> value
+    org.jsoup.helper.HttpConnection$KeyVal create(java.lang.String,java.lang.String) -> create
+    org.jsoup.helper.HttpConnection$KeyVal key(java.lang.String) -> key
+    java.lang.String key() -> key
+    org.jsoup.helper.HttpConnection$KeyVal value(java.lang.String) -> value
+    java.lang.String value() -> value
+    java.lang.String toString() -> toString
+    org.jsoup.Connection$KeyVal value(java.lang.String) -> value
+    org.jsoup.Connection$KeyVal key(java.lang.String) -> key
+org.jsoup.helper.HttpConnection$Request -> org.jsoup.helper.HttpConnection$Request:
+    int timeoutMilliseconds -> timeoutMilliseconds
+    boolean followRedirects -> followRedirects
+    java.util.Collection data -> data
+    boolean ignoreHttpErrors -> ignoreHttpErrors
+    boolean ignoreContentType -> ignoreContentType
+    org.jsoup.parser.Parser parser -> parser
+    int timeout() -> timeout
+    org.jsoup.helper.HttpConnection$Request timeout(int) -> timeout
+    boolean followRedirects() -> followRedirects
+    org.jsoup.Connection$Request followRedirects(boolean) -> followRedirects
+    boolean ignoreHttpErrors() -> ignoreHttpErrors
+    org.jsoup.Connection$Request ignoreHttpErrors(boolean) -> ignoreHttpErrors
+    boolean ignoreContentType() -> ignoreContentType
+    org.jsoup.Connection$Request ignoreContentType(boolean) -> ignoreContentType
+    org.jsoup.helper.HttpConnection$Request data(org.jsoup.Connection$KeyVal) -> data
+    java.util.Collection data() -> data
+    org.jsoup.helper.HttpConnection$Request parser(org.jsoup.parser.Parser) -> parser
+    org.jsoup.parser.Parser parser() -> parser
+    java.util.Map cookies() -> cookies
+    boolean hasCookie(java.lang.String) -> hasCookie
+    java.lang.String cookie(java.lang.String) -> cookie
+    java.util.Map headers() -> headers
+    boolean hasHeader(java.lang.String) -> hasHeader
+    java.lang.String header(java.lang.String) -> header
+    org.jsoup.Connection$Method method() -> method
+    java.net.URL url() -> url
+    org.jsoup.Connection$Request parser(org.jsoup.parser.Parser) -> parser
+    org.jsoup.Connection$Request data(org.jsoup.Connection$KeyVal) -> data
+    org.jsoup.Connection$Request timeout(int) -> timeout
+org.jsoup.helper.HttpConnection$Response -> org.jsoup.helper.HttpConnection$Response:
+    int MAX_REDIRECTS -> MAX_REDIRECTS
+    int statusCode -> statusCode
+    java.lang.String statusMessage -> statusMessage
+    java.nio.ByteBuffer byteData -> byteData
+    java.lang.String charset -> charset
+    java.lang.String contentType -> contentType
+    boolean executed -> executed
+    int numRedirects -> numRedirects
+    org.jsoup.Connection$Request req -> req
+    org.jsoup.helper.HttpConnection$Response execute(org.jsoup.Connection$Request) -> execute
+    org.jsoup.helper.HttpConnection$Response execute(org.jsoup.Connection$Request,org.jsoup.helper.HttpConnection$Response) -> execute
+    int statusCode() -> statusCode
+    java.lang.String statusMessage() -> statusMessage
+    java.lang.String charset() -> charset
+    java.lang.String contentType() -> contentType
+    org.jsoup.nodes.Document parse() -> parse
+    java.lang.String body() -> body
+    byte[] bodyAsBytes() -> bodyAsBytes
+    java.net.HttpURLConnection createConnection(org.jsoup.Connection$Request) -> createConnection
+    void setupFromConnection(java.net.HttpURLConnection,org.jsoup.Connection$Response) -> setupFromConnection
+    void processResponseHeaders(java.util.Map) -> processResponseHeaders
+    void writePost(java.util.Collection,java.io.OutputStream) -> writePost
+    java.lang.String getRequestCookieString(org.jsoup.Connection$Request) -> getRequestCookieString
+    void serialiseRequestUrl(org.jsoup.Connection$Request) -> serialiseRequestUrl
+    java.util.Map cookies() -> cookies
+    boolean hasCookie(java.lang.String) -> hasCookie
+    java.lang.String cookie(java.lang.String) -> cookie
+    java.util.Map headers() -> headers
+    boolean hasHeader(java.lang.String) -> hasHeader
+    java.lang.String header(java.lang.String) -> header
+    org.jsoup.Connection$Method method() -> method
+    java.net.URL url() -> url
+org.jsoup.helper.StringUtil -> org.jsoup.helper.StringUtil:
+    java.lang.String[] padding -> padding
+    java.lang.String join(java.util.Collection,java.lang.String) -> join
+    java.lang.String join(java.util.Iterator,java.lang.String) -> join
+    java.lang.String padding(int) -> padding
+    boolean isBlank(java.lang.String) -> isBlank
+    boolean isNumeric(java.lang.String) -> isNumeric
+    boolean isWhitespace(int) -> isWhitespace
+    java.lang.String normaliseWhitespace(java.lang.String) -> normaliseWhitespace
+    boolean in(java.lang.String,java.lang.String[]) -> in
+org.jsoup.helper.Validate -> org.jsoup.helper.Validate:
+    void notNull(java.lang.Object) -> notNull
+    void notNull(java.lang.Object,java.lang.String) -> notNull
+    void isTrue(boolean) -> isTrue
+    void isTrue(boolean,java.lang.String) -> isTrue
+    void isFalse(boolean) -> isFalse
+    void isFalse(boolean,java.lang.String) -> isFalse
+    void noNullElements(java.lang.Object[]) -> noNullElements
+    void noNullElements(java.lang.Object[],java.lang.String) -> noNullElements
+    void notEmpty(java.lang.String) -> notEmpty
+    void notEmpty(java.lang.String,java.lang.String) -> notEmpty
+    void fail(java.lang.String) -> fail
+org.jsoup.nodes.Attribute -> org.jsoup.nodes.Attribute:
+    java.lang.String key -> key
+    java.lang.String value -> value
+    java.lang.String getKey() -> getKey
+    void setKey(java.lang.String) -> setKey
+    java.lang.String getValue() -> getValue
+    java.lang.String setValue(java.lang.String) -> setValue
+    java.lang.String html() -> html
+    void html(java.lang.StringBuilder,org.jsoup.nodes.Document$OutputSettings) -> html
+    java.lang.String toString() -> toString
+    org.jsoup.nodes.Attribute createFromEncoded(java.lang.String,java.lang.String) -> createFromEncoded
+    boolean isDataAttribute() -> isDataAttribute
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    org.jsoup.nodes.Attribute clone() -> clone
+    java.lang.Object clone() -> clone
+    java.lang.Object setValue(java.lang.Object) -> setValue
+    java.lang.Object getValue() -> getValue
+    java.lang.Object getKey() -> getKey
+org.jsoup.nodes.Attributes -> org.jsoup.nodes.Attributes:
+    java.lang.String dataPrefix -> dataPrefix
+    java.util.LinkedHashMap attributes -> attributes
+    java.lang.String get(java.lang.String) -> get
+    void put(java.lang.String,java.lang.String) -> put
+    void put(org.jsoup.nodes.Attribute) -> put
+    void remove(java.lang.String) -> remove
+    boolean hasKey(java.lang.String) -> hasKey
+    int size() -> size
+    void addAll(org.jsoup.nodes.Attributes) -> addAll
+    java.util.Iterator iterator() -> iterator
+    java.util.List asList() -> asList
+    java.util.Map dataset() -> dataset
+    java.lang.String html() -> html
+    void html(java.lang.StringBuilder,org.jsoup.nodes.Document$OutputSettings) -> html
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    org.jsoup.nodes.Attributes clone() -> clone
+    java.lang.String dataKey(java.lang.String) -> dataKey
+    java.lang.Object clone() -> clone
+    java.util.LinkedHashMap access$100(org.jsoup.nodes.Attributes) -> access$100
+    java.util.LinkedHashMap access$102(org.jsoup.nodes.Attributes,java.util.LinkedHashMap) -> access$102
+    java.lang.String access$300(java.lang.String) -> access$300
+org.jsoup.nodes.Attributes$1 -> org.jsoup.nodes.Attributes$1:
+org.jsoup.nodes.Attributes$Dataset -> org.jsoup.nodes.Attributes$Dataset:
+    org.jsoup.nodes.Attributes this$0 -> this$0
+    java.util.Set entrySet() -> entrySet
+    java.lang.String put(java.lang.String,java.lang.String) -> put
+    java.lang.Object put(java.lang.Object,java.lang.Object) -> put
+org.jsoup.nodes.Attributes$Dataset$DatasetIterator -> org.jsoup.nodes.Attributes$Dataset$DatasetIterator:
+    java.util.Iterator attrIter -> attrIter
+    org.jsoup.nodes.Attribute attr -> attr
+    org.jsoup.nodes.Attributes$Dataset this$1 -> this$1
+    boolean hasNext() -> hasNext
+    java.util.Map$Entry next() -> next
+    void remove() -> remove
+    java.lang.Object next() -> next
+org.jsoup.nodes.Attributes$Dataset$EntrySet -> org.jsoup.nodes.Attributes$Dataset$EntrySet:
+    org.jsoup.nodes.Attributes$Dataset this$1 -> this$1
+    java.util.Iterator iterator() -> iterator
+    int size() -> size
+org.jsoup.nodes.Comment -> org.jsoup.nodes.Comment:
+    java.lang.String COMMENT_KEY -> COMMENT_KEY
+    java.lang.String nodeName() -> nodeName
+    java.lang.String getData() -> getData
+    void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlHead
+    void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlTail
+    java.lang.String toString() -> toString
+org.jsoup.nodes.DataNode -> org.jsoup.nodes.DataNode:
+    java.lang.String DATA_KEY -> DATA_KEY
+    java.lang.String nodeName() -> nodeName
+    java.lang.String getWholeData() -> getWholeData
+    org.jsoup.nodes.DataNode setWholeData(java.lang.String) -> setWholeData
+    void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlHead
+    void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlTail
+    java.lang.String toString() -> toString
+    org.jsoup.nodes.DataNode createFromEncoded(java.lang.String,java.lang.String) -> createFromEncoded
+org.jsoup.nodes.Document -> org.jsoup.nodes.Document:
+    org.jsoup.nodes.Document$OutputSettings outputSettings -> outputSettings
+    org.jsoup.nodes.Document$QuirksMode quirksMode -> quirksMode
+    org.jsoup.nodes.Document createShell(java.lang.String) -> createShell
+    org.jsoup.nodes.Element head() -> head
+    org.jsoup.nodes.Element body() -> body
+    java.lang.String title() -> title
+    void title(java.lang.String) -> title
+    org.jsoup.nodes.Element createElement(java.lang.String) -> createElement
+    org.jsoup.nodes.Document normalise() -> normalise
+    void normaliseTextNodes(org.jsoup.nodes.Element) -> normaliseTextNodes
+    void normaliseStructure(java.lang.String,org.jsoup.nodes.Element) -> normaliseStructure
+    org.jsoup.nodes.Element findFirstElementByTagName(java.lang.String,org.jsoup.nodes.Node) -> findFirstElementByTagName
+    java.lang.String outerHtml() -> outerHtml
+    org.jsoup.nodes.Element text(java.lang.String) -> text
+    java.lang.String nodeName() -> nodeName
+    org.jsoup.nodes.Document clone() -> clone
+    org.jsoup.nodes.Document$OutputSettings outputSettings() -> outputSettings
+    org.jsoup.nodes.Document outputSettings(org.jsoup.nodes.Document$OutputSettings) -> outputSettings
+    org.jsoup.nodes.Document$QuirksMode quirksMode() -> quirksMode
+    org.jsoup.nodes.Document quirksMode(org.jsoup.nodes.Document$QuirksMode) -> quirksMode
+    org.jsoup.nodes.Element clone() -> clone
+    org.jsoup.nodes.Node clone() -> clone
+    java.lang.Object clone() -> clone
+org.jsoup.nodes.Document$OutputSettings -> org.jsoup.nodes.Document$OutputSettings:
+    org.jsoup.nodes.Entities$EscapeMode escapeMode -> escapeMode
+    java.nio.charset.Charset charset -> charset
+    java.nio.charset.CharsetEncoder charsetEncoder -> charsetEncoder
+    boolean prettyPrint -> prettyPrint
+    int indentAmount -> indentAmount
+    org.jsoup.nodes.Entities$EscapeMode escapeMode() -> escapeMode
+    org.jsoup.nodes.Document$OutputSettings escapeMode(org.jsoup.nodes.Entities$EscapeMode) -> escapeMode
+    java.nio.charset.Charset charset() -> charset
+    org.jsoup.nodes.Document$OutputSettings charset(java.nio.charset.Charset) -> charset
+    org.jsoup.nodes.Document$OutputSettings charset(java.lang.String) -> charset
+    java.nio.charset.CharsetEncoder encoder() -> encoder
+    boolean prettyPrint() -> prettyPrint
+    org.jsoup.nodes.Document$OutputSettings prettyPrint(boolean) -> prettyPrint
+    int indentAmount() -> indentAmount
+    org.jsoup.nodes.Document$OutputSettings indentAmount(int) -> indentAmount
+    org.jsoup.nodes.Document$OutputSettings clone() -> clone
+    java.lang.Object clone() -> clone
+org.jsoup.nodes.Document$QuirksMode -> org.jsoup.nodes.Document$QuirksMode:
+    org.jsoup.nodes.Document$QuirksMode noQuirks -> noQuirks
+    org.jsoup.nodes.Document$QuirksMode quirks -> quirks
+    org.jsoup.nodes.Document$QuirksMode limitedQuirks -> limitedQuirks
+    org.jsoup.nodes.Document$QuirksMode[] $VALUES -> $VALUES
+    org.jsoup.nodes.Document$QuirksMode[] values() -> values
+    org.jsoup.nodes.Document$QuirksMode valueOf(java.lang.String) -> valueOf
+org.jsoup.nodes.DocumentType -> org.jsoup.nodes.DocumentType:
+    java.lang.String nodeName() -> nodeName
+    void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlHead
+    void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlTail
+org.jsoup.nodes.Element -> org.jsoup.nodes.Element:
+    org.jsoup.parser.Tag tag -> tag
+    java.util.Set classNames -> classNames
+    java.lang.String nodeName() -> nodeName
+    java.lang.String tagName() -> tagName
+    org.jsoup.nodes.Element tagName(java.lang.String) -> tagName
+    org.jsoup.parser.Tag tag() -> tag
+    boolean isBlock() -> isBlock
+    java.lang.String id() -> id
+    org.jsoup.nodes.Element attr(java.lang.String,java.lang.String) -> attr
+    java.util.Map dataset() -> dataset
+    org.jsoup.nodes.Element parent() -> parent
+    org.jsoup.select.Elements parents() -> parents
+    void accumulateParents(org.jsoup.nodes.Element,org.jsoup.select.Elements) -> accumulateParents
+    org.jsoup.nodes.Element child(int) -> child
+    org.jsoup.select.Elements children() -> children
+    java.util.List textNodes() -> textNodes
+    java.util.List dataNodes() -> dataNodes
+    org.jsoup.select.Elements select(java.lang.String) -> select
+    org.jsoup.nodes.Element appendChild(org.jsoup.nodes.Node) -> appendChild
+    org.jsoup.nodes.Element prependChild(org.jsoup.nodes.Node) -> prependChild
+    org.jsoup.nodes.Element appendElement(java.lang.String) -> appendElement
+    org.jsoup.nodes.Element prependElement(java.lang.String) -> prependElement
+    org.jsoup.nodes.Element appendText(java.lang.String) -> appendText
+    org.jsoup.nodes.Element prependText(java.lang.String) -> prependText
+    org.jsoup.nodes.Element append(java.lang.String) -> append
+    org.jsoup.nodes.Element prepend(java.lang.String) -> prepend
+    org.jsoup.nodes.Element before(java.lang.String) -> before
+    org.jsoup.nodes.Element before(org.jsoup.nodes.Node) -> before
+    org.jsoup.nodes.Element after(java.lang.String) -> after
+    org.jsoup.nodes.Element after(org.jsoup.nodes.Node) -> after
+    org.jsoup.nodes.Element empty() -> empty
+    org.jsoup.nodes.Element wrap(java.lang.String) -> wrap
+    org.jsoup.select.Elements siblingElements() -> siblingElements
+    org.jsoup.nodes.Element nextElementSibling() -> nextElementSibling
+    org.jsoup.nodes.Element previousElementSibling() -> previousElementSibling
+    org.jsoup.nodes.Element firstElementSibling() -> firstElementSibling
+    java.lang.Integer elementSiblingIndex() -> elementSiblingIndex
+    org.jsoup.nodes.Element lastElementSibling() -> lastElementSibling
+    java.lang.Integer indexInList(org.jsoup.nodes.Element,java.util.List) -> indexInList
+    org.jsoup.select.Elements getElementsByTag(java.lang.String) -> getElementsByTag
+    org.jsoup.nodes.Element getElementById(java.lang.String) -> getElementById
+    org.jsoup.select.Elements getElementsByClass(java.lang.String) -> getElementsByClass
+    org.jsoup.select.Elements getElementsByAttribute(java.lang.String) -> getElementsByAttribute
+    org.jsoup.select.Elements getElementsByAttributeStarting(java.lang.String) -> getElementsByAttributeStarting
+    org.jsoup.select.Elements getElementsByAttributeValue(java.lang.String,java.lang.String) -> getElementsByAttributeValue
+    org.jsoup.select.Elements getElementsByAttributeValueNot(java.lang.String,java.lang.String) -> getElementsByAttributeValueNot
+    org.jsoup.select.Elements getElementsByAttributeValueStarting(java.lang.String,java.lang.String) -> getElementsByAttributeValueStarting
+    org.jsoup.select.Elements getElementsByAttributeValueEnding(java.lang.String,java.lang.String) -> getElementsByAttributeValueEnding
+    org.jsoup.select.Elements getElementsByAttributeValueContaining(java.lang.String,java.lang.String) -> getElementsByAttributeValueContaining
+    org.jsoup.select.Elements getElementsByAttributeValueMatching(java.lang.String,java.util.regex.Pattern) -> getElementsByAttributeValueMatching
+    org.jsoup.select.Elements getElementsByAttributeValueMatching(java.lang.String,java.lang.String) -> getElementsByAttributeValueMatching
+    org.jsoup.select.Elements getElementsByIndexLessThan(int) -> getElementsByIndexLessThan
+    org.jsoup.select.Elements getElementsByIndexGreaterThan(int) -> getElementsByIndexGreaterThan
+    org.jsoup.select.Elements getElementsByIndexEquals(int) -> getElementsByIndexEquals
+    org.jsoup.select.Elements getElementsContainingText(java.lang.String) -> getElementsContainingText
+    org.jsoup.select.Elements getElementsContainingOwnText(java.lang.String) -> getElementsContainingOwnText
+    org.jsoup.select.Elements getElementsMatchingText(java.util.regex.Pattern) -> getElementsMatchingText
+    org.jsoup.select.Elements getElementsMatchingText(java.lang.String) -> getElementsMatchingText
+    org.jsoup.select.Elements getElementsMatchingOwnText(java.util.regex.Pattern) -> getElementsMatchingOwnText
+    org.jsoup.select.Elements getElementsMatchingOwnText(java.lang.String) -> getElementsMatchingOwnText
+    org.jsoup.select.Elements getAllElements() -> getAllElements
+    java.lang.String text() -> text
+    void text(java.lang.StringBuilder) -> text
+    java.lang.String ownText() -> ownText
+    void ownText(java.lang.StringBuilder) -> ownText
+    void appendNormalisedText(java.lang.StringBuilder,org.jsoup.nodes.TextNode) -> appendNormalisedText
+    void appendWhitespaceIfBr(org.jsoup.nodes.Element,java.lang.StringBuilder) -> appendWhitespaceIfBr
+    boolean preserveWhitespace() -> preserveWhitespace
+    org.jsoup.nodes.Element text(java.lang.String) -> text
+    boolean hasText() -> hasText
+    java.lang.String data() -> data
+    java.lang.String className() -> className
+    java.util.Set classNames() -> classNames
+    org.jsoup.nodes.Element classNames(java.util.Set) -> classNames
+    boolean hasClass(java.lang.String) -> hasClass
+    org.jsoup.nodes.Element addClass(java.lang.String) -> addClass
+    org.jsoup.nodes.Element removeClass(java.lang.String) -> removeClass
+    org.jsoup.nodes.Element toggleClass(java.lang.String) -> toggleClass
+    java.lang.String val() -> val
+    org.jsoup.nodes.Element val(java.lang.String) -> val
+    void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlHead
+    void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlTail
+    java.lang.String html() -> html
+    void html(java.lang.StringBuilder) -> html
+    org.jsoup.nodes.Element html(java.lang.String) -> html
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    org.jsoup.nodes.Element clone() -> clone
+    org.jsoup.nodes.Node clone() -> clone
+    org.jsoup.nodes.Node wrap(java.lang.String) -> wrap
+    org.jsoup.nodes.Node after(org.jsoup.nodes.Node) -> after
+    org.jsoup.nodes.Node after(java.lang.String) -> after
+    org.jsoup.nodes.Node before(org.jsoup.nodes.Node) -> before
+    org.jsoup.nodes.Node before(java.lang.String) -> before
+    org.jsoup.nodes.Node parent() -> parent
+    org.jsoup.nodes.Node attr(java.lang.String,java.lang.String) -> attr
+    java.lang.Object clone() -> clone
+org.jsoup.nodes.Entities -> org.jsoup.nodes.Entities:
+    java.util.Map full -> full
+    java.util.Map xhtmlByVal -> xhtmlByVal
+    java.util.Map base -> base
+    java.util.Map baseByVal -> baseByVal
+    java.util.Map fullByVal -> fullByVal
+    java.util.regex.Pattern unescapePattern -> unescapePattern
+    java.util.regex.Pattern strictUnescapePattern -> strictUnescapePattern
+    java.lang.Object[][] xhtmlArray -> xhtmlArray
+    boolean isNamedEntity(java.lang.String) -> isNamedEntity
+    boolean isBaseNamedEntity(java.lang.String) -> isBaseNamedEntity
+    java.lang.Character getCharacterByName(java.lang.String) -> getCharacterByName
+    java.lang.String escape(java.lang.String,org.jsoup.nodes.Document$OutputSettings) -> escape
+    java.lang.String escape(java.lang.String,java.nio.charset.CharsetEncoder,org.jsoup.nodes.Entities$EscapeMode) -> escape
+    java.lang.String unescape(java.lang.String) -> unescape
+    java.lang.String unescape(java.lang.String,boolean) -> unescape
+    java.util.Map loadEntities(java.lang.String) -> loadEntities
+    java.util.Map toCharacterKey(java.util.Map) -> toCharacterKey
+    java.util.Map access$000() -> access$000
+    java.util.Map access$100() -> access$100
+    java.util.Map access$200() -> access$200
+org.jsoup.nodes.Entities$EscapeMode -> org.jsoup.nodes.Entities$EscapeMode:
+    org.jsoup.nodes.Entities$EscapeMode xhtml -> xhtml
+    org.jsoup.nodes.Entities$EscapeMode base -> base
+    org.jsoup.nodes.Entities$EscapeMode extended -> extended
+    java.util.Map map -> map
+    org.jsoup.nodes.Entities$EscapeMode[] $VALUES -> $VALUES
+    org.jsoup.nodes.Entities$EscapeMode[] values() -> values
+    org.jsoup.nodes.Entities$EscapeMode valueOf(java.lang.String) -> valueOf
+    java.util.Map getMap() -> getMap
+org.jsoup.nodes.Node -> org.jsoup.nodes.Node:
+    org.jsoup.nodes.Node parentNode -> parentNode
+    java.util.List childNodes -> childNodes
+    org.jsoup.nodes.Attributes attributes -> attributes
+    java.lang.String baseUri -> baseUri
+    int siblingIndex -> siblingIndex
+    java.lang.String nodeName() -> nodeName
+    java.lang.String attr(java.lang.String) -> attr
+    org.jsoup.nodes.Attributes attributes() -> attributes
+    org.jsoup.nodes.Node attr(java.lang.String,java.lang.String) -> attr
+    boolean hasAttr(java.lang.String) -> hasAttr
+    org.jsoup.nodes.Node removeAttr(java.lang.String) -> removeAttr
+    java.lang.String baseUri() -> baseUri
+    void setBaseUri(java.lang.String) -> setBaseUri
+    java.lang.String absUrl(java.lang.String) -> absUrl
+    org.jsoup.nodes.Node childNode(int) -> childNode
+    java.util.List childNodes() -> childNodes
+    org.jsoup.nodes.Node[] childNodesAsArray() -> childNodesAsArray
+    org.jsoup.nodes.Node parent() -> parent
+    org.jsoup.nodes.Document ownerDocument() -> ownerDocument
+    void remove() -> remove
+    org.jsoup.nodes.Node before(java.lang.String) -> before
+    org.jsoup.nodes.Node before(org.jsoup.nodes.Node) -> before
+    org.jsoup.nodes.Node after(java.lang.String) -> after
+    org.jsoup.nodes.Node after(org.jsoup.nodes.Node) -> after
+    void addSiblingHtml(int,java.lang.String) -> addSiblingHtml
+    org.jsoup.nodes.Node wrap(java.lang.String) -> wrap
+    org.jsoup.nodes.Node unwrap() -> unwrap
+    org.jsoup.nodes.Element getDeepChild(org.jsoup.nodes.Element) -> getDeepChild
+    void replaceWith(org.jsoup.nodes.Node) -> replaceWith
+    void setParentNode(org.jsoup.nodes.Node) -> setParentNode
+    void replaceChild(org.jsoup.nodes.Node,org.jsoup.nodes.Node) -> replaceChild
+    void removeChild(org.jsoup.nodes.Node) -> removeChild
+    void addChildren(org.jsoup.nodes.Node[]) -> addChildren
+    void addChildren(int,org.jsoup.nodes.Node[]) -> addChildren
+    void reparentChild(org.jsoup.nodes.Node) -> reparentChild
+    void reindexChildren() -> reindexChildren
+    java.util.List siblingNodes() -> siblingNodes
+    org.jsoup.nodes.Node nextSibling() -> nextSibling
+    org.jsoup.nodes.Node previousSibling() -> previousSibling
+    int siblingIndex() -> siblingIndex
+    void setSiblingIndex(int) -> setSiblingIndex
+    org.jsoup.nodes.Node traverse(org.jsoup.select.NodeVisitor) -> traverse
+    java.lang.String outerHtml() -> outerHtml
+    void outerHtml(java.lang.StringBuilder) -> outerHtml
+    org.jsoup.nodes.Document$OutputSettings getOutputSettings() -> getOutputSettings
+    void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlHead
+    void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlTail
+    java.lang.String toString() -> toString
+    void indent(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> indent
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    org.jsoup.nodes.Node clone() -> clone
+    org.jsoup.nodes.Node doClone(org.jsoup.nodes.Node) -> doClone
+    java.lang.Object clone() -> clone
+org.jsoup.nodes.Node$1 -> org.jsoup.nodes.Node$1:
+    java.lang.String val$baseUri -> val$baseUri
+    org.jsoup.nodes.Node this$0 -> this$0
+    void head(org.jsoup.nodes.Node,int) -> head
+    void tail(org.jsoup.nodes.Node,int) -> tail
+org.jsoup.nodes.Node$OuterHtmlVisitor -> org.jsoup.nodes.Node$OuterHtmlVisitor:
+    java.lang.StringBuilder accum -> accum
+    org.jsoup.nodes.Document$OutputSettings out -> out
+    void head(org.jsoup.nodes.Node,int) -> head
+    void tail(org.jsoup.nodes.Node,int) -> tail
+org.jsoup.nodes.TextNode -> org.jsoup.nodes.TextNode:
+    java.lang.String TEXT_KEY -> TEXT_KEY
+    java.lang.String text -> text
+    java.lang.String nodeName() -> nodeName
+    java.lang.String text() -> text
+    org.jsoup.nodes.TextNode text(java.lang.String) -> text
+    java.lang.String getWholeText() -> getWholeText
+    boolean isBlank() -> isBlank
+    org.jsoup.nodes.TextNode splitText(int) -> splitText
+    void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlHead
+    void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlTail
+    java.lang.String toString() -> toString
+    org.jsoup.nodes.TextNode createFromEncoded(java.lang.String,java.lang.String) -> createFromEncoded
+    java.lang.String normaliseWhitespace(java.lang.String) -> normaliseWhitespace
+    java.lang.String stripLeadingWhitespace(java.lang.String) -> stripLeadingWhitespace
+    boolean lastCharIsWhitespace(java.lang.StringBuilder) -> lastCharIsWhitespace
+    void ensureAttributes() -> ensureAttributes
+    java.lang.String attr(java.lang.String) -> attr
+    org.jsoup.nodes.Attributes attributes() -> attributes
+    org.jsoup.nodes.Node attr(java.lang.String,java.lang.String) -> attr
+    boolean hasAttr(java.lang.String) -> hasAttr
+    org.jsoup.nodes.Node removeAttr(java.lang.String) -> removeAttr
+    java.lang.String absUrl(java.lang.String) -> absUrl
+org.jsoup.nodes.XmlDeclaration -> org.jsoup.nodes.XmlDeclaration:
+    java.lang.String DECL_KEY -> DECL_KEY
+    boolean isProcessingInstruction -> isProcessingInstruction
+    java.lang.String nodeName() -> nodeName
+    java.lang.String getWholeDeclaration() -> getWholeDeclaration
+    void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlHead
+    void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> outerHtmlTail
+    java.lang.String toString() -> toString
+org.jsoup.parser.CharacterReader -> org.jsoup.parser.CharacterReader:
+    char EOF -> EOF
+    char[] input -> input
+    int length -> length
+    int pos -> pos
+    int mark -> mark
+    int pos() -> pos
+    boolean isEmpty() -> isEmpty
+    char current() -> current
+    char consume() -> consume
+    void unconsume() -> unconsume
+    void advance() -> advance
+    void mark() -> mark
+    void rewindToMark() -> rewindToMark
+    java.lang.String consumeAsString() -> consumeAsString
+    int nextIndexOf(char) -> nextIndexOf
+    int nextIndexOf(java.lang.CharSequence) -> nextIndexOf
+    java.lang.String consumeTo(char) -> consumeTo
+    java.lang.String consumeTo(java.lang.String) -> consumeTo
+    java.lang.String consumeToAny(char[]) -> consumeToAny
+    java.lang.String consumeToEnd() -> consumeToEnd
+    java.lang.String consumeLetterSequence() -> consumeLetterSequence
+    java.lang.String consumeLetterThenDigitSequence() -> consumeLetterThenDigitSequence
+    java.lang.String consumeHexSequence() -> consumeHexSequence
+    java.lang.String consumeDigitSequence() -> consumeDigitSequence
+    boolean matches(char) -> matches
+    boolean matches(java.lang.String) -> matches
+    boolean matchesIgnoreCase(java.lang.String) -> matchesIgnoreCase
+    boolean matchesAny(char[]) -> matchesAny
+    boolean matchesLetter() -> matchesLetter
+    boolean matchesDigit() -> matchesDigit
+    boolean matchConsume(java.lang.String) -> matchConsume
+    boolean matchConsumeIgnoreCase(java.lang.String) -> matchConsumeIgnoreCase
+    boolean containsIgnoreCase(java.lang.String) -> containsIgnoreCase
+    java.lang.String toString() -> toString
+org.jsoup.parser.HtmlTreeBuilder -> org.jsoup.parser.HtmlTreeBuilder:
+    org.jsoup.parser.HtmlTreeBuilderState state -> state
+    org.jsoup.parser.HtmlTreeBuilderState originalState -> originalState
+    boolean baseUriSetFromDoc -> baseUriSetFromDoc
+    org.jsoup.nodes.Element headElement -> headElement
+    org.jsoup.nodes.Element formElement -> formElement
+    org.jsoup.nodes.Element contextElement -> contextElement
+    org.jsoup.helper.DescendableLinkedList formattingElements -> formattingElements
+    java.util.List pendingTableCharacters -> pendingTableCharacters
+    boolean framesetOk -> framesetOk
+    boolean fosterInserts -> fosterInserts
+    boolean fragmentParsing -> fragmentParsing
+    boolean $assertionsDisabled -> $assertionsDisabled
+    org.jsoup.nodes.Document parse(java.lang.String,java.lang.String,org.jsoup.parser.ParseErrorList) -> parse
+    java.util.List parseFragment(java.lang.String,org.jsoup.nodes.Element,java.lang.String,org.jsoup.parser.ParseErrorList) -> parseFragment
+    boolean process(org.jsoup.parser.Token) -> process
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilderState) -> process
+    void transition(org.jsoup.parser.HtmlTreeBuilderState) -> transition
+    org.jsoup.parser.HtmlTreeBuilderState state() -> state
+    void markInsertionMode() -> markInsertionMode
+    org.jsoup.parser.HtmlTreeBuilderState originalState() -> originalState
+    void framesetOk(boolean) -> framesetOk
+    boolean framesetOk() -> framesetOk
+    org.jsoup.nodes.Document getDocument() -> getDocument
+    java.lang.String getBaseUri() -> getBaseUri
+    void maybeSetBaseUri(org.jsoup.nodes.Element) -> maybeSetBaseUri
+    boolean isFragmentParsing() -> isFragmentParsing
+    void error(org.jsoup.parser.HtmlTreeBuilderState) -> error
+    org.jsoup.nodes.Element insert(org.jsoup.parser.Token$StartTag) -> insert
+    org.jsoup.nodes.Element insert(java.lang.String) -> insert
+    void insert(org.jsoup.nodes.Element) -> insert
+    org.jsoup.nodes.Element insertEmpty(org.jsoup.parser.Token$StartTag) -> insertEmpty
+    void insert(org.jsoup.parser.Token$Comment) -> insert
+    void insert(org.jsoup.parser.Token$Character) -> insert
+    void insertNode(org.jsoup.nodes.Node) -> insertNode
+    org.jsoup.nodes.Element pop() -> pop
+    void push(org.jsoup.nodes.Element) -> push
+    org.jsoup.helper.DescendableLinkedList getStack() -> getStack
+    boolean onStack(org.jsoup.nodes.Element) -> onStack
+    boolean isElementInQueue(org.jsoup.helper.DescendableLinkedList,org.jsoup.nodes.Element) -> isElementInQueue
+    org.jsoup.nodes.Element getFromStack(java.lang.String) -> getFromStack
+    boolean removeFromStack(org.jsoup.nodes.Element) -> removeFromStack
+    void popStackToClose(java.lang.String) -> popStackToClose
+    void popStackToClose(java.lang.String[]) -> popStackToClose
+    void popStackToBefore(java.lang.String) -> popStackToBefore
+    void clearStackToTableContext() -> clearStackToTableContext
+    void clearStackToTableBodyContext() -> clearStackToTableBodyContext
+    void clearStackToTableRowContext() -> clearStackToTableRowContext
+    void clearStackToContext(java.lang.String[]) -> clearStackToContext
+    org.jsoup.nodes.Element aboveOnStack(org.jsoup.nodes.Element) -> aboveOnStack
+    void insertOnStackAfter(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> insertOnStackAfter
+    void replaceOnStack(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> replaceOnStack
+    void replaceInQueue(java.util.LinkedList,org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> replaceInQueue
+    void resetInsertionMode() -> resetInsertionMode
+    boolean inSpecificScope(java.lang.String,java.lang.String[],java.lang.String[]) -> inSpecificScope
+    boolean inSpecificScope(java.lang.String[],java.lang.String[],java.lang.String[]) -> inSpecificScope
+    boolean inScope(java.lang.String[]) -> inScope
+    boolean inScope(java.lang.String) -> inScope
+    boolean inScope(java.lang.String,java.lang.String[]) -> inScope
+    boolean inListItemScope(java.lang.String) -> inListItemScope
+    boolean inButtonScope(java.lang.String) -> inButtonScope
+    boolean inTableScope(java.lang.String) -> inTableScope
+    boolean inSelectScope(java.lang.String) -> inSelectScope
+    void setHeadElement(org.jsoup.nodes.Element) -> setHeadElement
+    org.jsoup.nodes.Element getHeadElement() -> getHeadElement
+    boolean isFosterInserts() -> isFosterInserts
+    void setFosterInserts(boolean) -> setFosterInserts
+    org.jsoup.nodes.Element getFormElement() -> getFormElement
+    void setFormElement(org.jsoup.nodes.Element) -> setFormElement
+    void newPendingTableCharacters() -> newPendingTableCharacters
+    java.util.List getPendingTableCharacters() -> getPendingTableCharacters
+    void setPendingTableCharacters(java.util.List) -> setPendingTableCharacters
+    void generateImpliedEndTags(java.lang.String) -> generateImpliedEndTags
+    void generateImpliedEndTags() -> generateImpliedEndTags
+    boolean isSpecial(org.jsoup.nodes.Element) -> isSpecial
+    void pushActiveFormattingElements(org.jsoup.nodes.Element) -> pushActiveFormattingElements
+    boolean isSameFormattingElement(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> isSameFormattingElement
+    void reconstructFormattingElements() -> reconstructFormattingElements
+    void clearFormattingElementsToLastMarker() -> clearFormattingElementsToLastMarker
+    void removeFromActiveFormattingElements(org.jsoup.nodes.Element) -> removeFromActiveFormattingElements
+    boolean isInActiveFormattingElements(org.jsoup.nodes.Element) -> isInActiveFormattingElements
+    org.jsoup.nodes.Element getActiveFormattingElement(java.lang.String) -> getActiveFormattingElement
+    void replaceActiveFormattingElement(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> replaceActiveFormattingElement
+    void insertMarkerToFormattingElements() -> insertMarkerToFormattingElements
+    void insertInFosterParent(org.jsoup.nodes.Node) -> insertInFosterParent
+    java.lang.String toString() -> toString
+org.jsoup.parser.HtmlTreeBuilderState -> org.jsoup.parser.HtmlTreeBuilderState:
+    org.jsoup.parser.HtmlTreeBuilderState Initial -> Initial
+    org.jsoup.parser.HtmlTreeBuilderState BeforeHtml -> BeforeHtml
+    org.jsoup.parser.HtmlTreeBuilderState BeforeHead -> BeforeHead
+    org.jsoup.parser.HtmlTreeBuilderState InHead -> InHead
+    org.jsoup.parser.HtmlTreeBuilderState InHeadNoscript -> InHeadNoscript
+    org.jsoup.parser.HtmlTreeBuilderState AfterHead -> AfterHead
+    org.jsoup.parser.HtmlTreeBuilderState InBody -> InBody
+    org.jsoup.parser.HtmlTreeBuilderState Text -> Text
+    org.jsoup.parser.HtmlTreeBuilderState InTable -> InTable
+    org.jsoup.parser.HtmlTreeBuilderState InTableText -> InTableText
+    org.jsoup.parser.HtmlTreeBuilderState InCaption -> InCaption
+    org.jsoup.parser.HtmlTreeBuilderState InColumnGroup -> InColumnGroup
+    org.jsoup.parser.HtmlTreeBuilderState InTableBody -> InTableBody
+    org.jsoup.parser.HtmlTreeBuilderState InRow -> InRow
+    org.jsoup.parser.HtmlTreeBuilderState InCell -> InCell
+    org.jsoup.parser.HtmlTreeBuilderState InSelect -> InSelect
+    org.jsoup.parser.HtmlTreeBuilderState InSelectInTable -> InSelectInTable
+    org.jsoup.parser.HtmlTreeBuilderState AfterBody -> AfterBody
+    org.jsoup.parser.HtmlTreeBuilderState InFrameset -> InFrameset
+    org.jsoup.parser.HtmlTreeBuilderState AfterFrameset -> AfterFrameset
+    org.jsoup.parser.HtmlTreeBuilderState AfterAfterBody -> AfterAfterBody
+    org.jsoup.parser.HtmlTreeBuilderState AfterAfterFrameset -> AfterAfterFrameset
+    org.jsoup.parser.HtmlTreeBuilderState ForeignContent -> ForeignContent
+    java.lang.String nullString -> nullString
+    org.jsoup.parser.HtmlTreeBuilderState[] $VALUES -> $VALUES
+    org.jsoup.parser.HtmlTreeBuilderState[] values() -> values
+    org.jsoup.parser.HtmlTreeBuilderState valueOf(java.lang.String) -> valueOf
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean isWhitespace(org.jsoup.parser.Token) -> isWhitespace
+    void handleRcData(org.jsoup.parser.Token$StartTag,org.jsoup.parser.HtmlTreeBuilder) -> handleRcData
+    void handleRawtext(org.jsoup.parser.Token$StartTag,org.jsoup.parser.HtmlTreeBuilder) -> handleRawtext
+    boolean access$100(org.jsoup.parser.Token) -> access$100
+    void access$200(org.jsoup.parser.Token$StartTag,org.jsoup.parser.HtmlTreeBuilder) -> access$200
+    void access$300(org.jsoup.parser.Token$StartTag,org.jsoup.parser.HtmlTreeBuilder) -> access$300
+    java.lang.String access$400() -> access$400
+org.jsoup.parser.HtmlTreeBuilderState$1 -> org.jsoup.parser.HtmlTreeBuilderState$1:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$10 -> org.jsoup.parser.HtmlTreeBuilderState$10:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$11 -> org.jsoup.parser.HtmlTreeBuilderState$11:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$12 -> org.jsoup.parser.HtmlTreeBuilderState$12:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.TreeBuilder) -> anythingElse
+org.jsoup.parser.HtmlTreeBuilderState$13 -> org.jsoup.parser.HtmlTreeBuilderState$13:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean exitTableBody(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> exitTableBody
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> anythingElse
+org.jsoup.parser.HtmlTreeBuilderState$14 -> org.jsoup.parser.HtmlTreeBuilderState$14:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> anythingElse
+    boolean handleMissingTr(org.jsoup.parser.Token,org.jsoup.parser.TreeBuilder) -> handleMissingTr
+org.jsoup.parser.HtmlTreeBuilderState$15 -> org.jsoup.parser.HtmlTreeBuilderState$15:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> anythingElse
+    void closeCell(org.jsoup.parser.HtmlTreeBuilder) -> closeCell
+org.jsoup.parser.HtmlTreeBuilderState$16 -> org.jsoup.parser.HtmlTreeBuilderState$16:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> anythingElse
+org.jsoup.parser.HtmlTreeBuilderState$17 -> org.jsoup.parser.HtmlTreeBuilderState$17:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$18 -> org.jsoup.parser.HtmlTreeBuilderState$18:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$19 -> org.jsoup.parser.HtmlTreeBuilderState$19:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$2 -> org.jsoup.parser.HtmlTreeBuilderState$2:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> anythingElse
+org.jsoup.parser.HtmlTreeBuilderState$20 -> org.jsoup.parser.HtmlTreeBuilderState$20:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$21 -> org.jsoup.parser.HtmlTreeBuilderState$21:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$22 -> org.jsoup.parser.HtmlTreeBuilderState$22:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$23 -> org.jsoup.parser.HtmlTreeBuilderState$23:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$24 -> org.jsoup.parser.HtmlTreeBuilderState$24:
+    int[] $SwitchMap$org$jsoup$parser$Token$TokenType -> $SwitchMap$org$jsoup$parser$Token$TokenType
+org.jsoup.parser.HtmlTreeBuilderState$3 -> org.jsoup.parser.HtmlTreeBuilderState$3:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$4 -> org.jsoup.parser.HtmlTreeBuilderState$4:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.TreeBuilder) -> anythingElse
+org.jsoup.parser.HtmlTreeBuilderState$5 -> org.jsoup.parser.HtmlTreeBuilderState$5:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> anythingElse
+org.jsoup.parser.HtmlTreeBuilderState$6 -> org.jsoup.parser.HtmlTreeBuilderState$6:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> anythingElse
+org.jsoup.parser.HtmlTreeBuilderState$7 -> org.jsoup.parser.HtmlTreeBuilderState$7:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anyOtherEndTag(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> anyOtherEndTag
+org.jsoup.parser.HtmlTreeBuilderState$8 -> org.jsoup.parser.HtmlTreeBuilderState$8:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+org.jsoup.parser.HtmlTreeBuilderState$9 -> org.jsoup.parser.HtmlTreeBuilderState$9:
+    boolean process(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> process
+    boolean anythingElse(org.jsoup.parser.Token,org.jsoup.parser.HtmlTreeBuilder) -> anythingElse
+org.jsoup.parser.ParseError -> org.jsoup.parser.ParseError:
+    int pos -> pos
+    java.lang.String errorMsg -> errorMsg
+    java.lang.String getErrorMessage() -> getErrorMessage
+    int getPosition() -> getPosition
+    java.lang.String toString() -> toString
+org.jsoup.parser.ParseErrorList -> org.jsoup.parser.ParseErrorList:
+    int INITIAL_CAPACITY -> INITIAL_CAPACITY
+    int maxSize -> maxSize
+    boolean canAddError() -> canAddError
+    int getMaxSize() -> getMaxSize
+    org.jsoup.parser.ParseErrorList noTracking() -> noTracking
+    org.jsoup.parser.ParseErrorList tracking(int) -> tracking
+org.jsoup.parser.Parser -> org.jsoup.parser.Parser:
+    int DEFAULT_MAX_ERRORS -> DEFAULT_MAX_ERRORS
+    org.jsoup.parser.TreeBuilder treeBuilder -> treeBuilder
+    int maxErrors -> maxErrors
+    org.jsoup.parser.ParseErrorList errors -> errors
+    org.jsoup.nodes.Document parseInput(java.lang.String,java.lang.String) -> parseInput
+    org.jsoup.parser.TreeBuilder getTreeBuilder() -> getTreeBuilder
+    org.jsoup.parser.Parser setTreeBuilder(org.jsoup.parser.TreeBuilder) -> setTreeBuilder
+    boolean isTrackErrors() -> isTrackErrors
+    org.jsoup.parser.Parser setTrackErrors(int) -> setTrackErrors
+    java.util.List getErrors() -> getErrors
+    org.jsoup.nodes.Document parse(java.lang.String,java.lang.String) -> parse
+    java.util.List parseFragment(java.lang.String,org.jsoup.nodes.Element,java.lang.String) -> parseFragment
+    org.jsoup.nodes.Document parseBodyFragment(java.lang.String,java.lang.String) -> parseBodyFragment
+    java.lang.String unescapeEntities(java.lang.String,boolean) -> unescapeEntities
+    org.jsoup.nodes.Document parseBodyFragmentRelaxed(java.lang.String,java.lang.String) -> parseBodyFragmentRelaxed
+    org.jsoup.parser.Parser htmlParser() -> htmlParser
+    org.jsoup.parser.Parser xmlParser() -> xmlParser
+org.jsoup.parser.Tag -> org.jsoup.parser.Tag:
+    java.util.Map tags -> tags
+    java.lang.String tagName -> tagName
+    boolean isBlock -> isBlock
+    boolean formatAsBlock -> formatAsBlock
+    boolean canContainBlock -> canContainBlock
+    boolean canContainInline -> canContainInline
+    boolean empty -> empty
+    boolean selfClosing -> selfClosing
+    boolean preserveWhitespace -> preserveWhitespace
+    java.lang.String[] blockTags -> blockTags
+    java.lang.String[] inlineTags -> inlineTags
+    java.lang.String[] emptyTags -> emptyTags
+    java.lang.String[] formatAsInlineTags -> formatAsInlineTags
+    java.lang.String[] preserveWhitespaceTags -> preserveWhitespaceTags
+    java.lang.String getName() -> getName
+    org.jsoup.parser.Tag valueOf(java.lang.String) -> valueOf
+    boolean isBlock() -> isBlock
+    boolean formatAsBlock() -> formatAsBlock
+    boolean canContainBlock() -> canContainBlock
+    boolean isInline() -> isInline
+    boolean isData() -> isData
+    boolean isEmpty() -> isEmpty
+    boolean isSelfClosing() -> isSelfClosing
+    boolean isKnownTag() -> isKnownTag
+    boolean isKnownTag(java.lang.String) -> isKnownTag
+    boolean preserveWhitespace() -> preserveWhitespace
+    org.jsoup.parser.Tag setSelfClosing() -> setSelfClosing
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    void register(org.jsoup.parser.Tag) -> register
+org.jsoup.parser.Token -> org.jsoup.parser.Token:
+    org.jsoup.parser.Token$TokenType type -> type
+    java.lang.String tokenType() -> tokenType
+    boolean isDoctype() -> isDoctype
+    org.jsoup.parser.Token$Doctype asDoctype() -> asDoctype
+    boolean isStartTag() -> isStartTag
+    org.jsoup.parser.Token$StartTag asStartTag() -> asStartTag
+    boolean isEndTag() -> isEndTag
+    org.jsoup.parser.Token$EndTag asEndTag() -> asEndTag
+    boolean isComment() -> isComment
+    org.jsoup.parser.Token$Comment asComment() -> asComment
+    boolean isCharacter() -> isCharacter
+    org.jsoup.parser.Token$Character asCharacter() -> asCharacter
+    boolean isEOF() -> isEOF
+org.jsoup.parser.Token$1 -> org.jsoup.parser.Token$1:
+org.jsoup.parser.Token$Character -> org.jsoup.parser.Token$Character:
+    java.lang.String data -> data
+    java.lang.String getData() -> getData
+    java.lang.String toString() -> toString
+org.jsoup.parser.Token$Comment -> org.jsoup.parser.Token$Comment:
+    java.lang.StringBuilder data -> data
+    java.lang.String getData() -> getData
+    java.lang.String toString() -> toString
+org.jsoup.parser.Token$Doctype -> org.jsoup.parser.Token$Doctype:
+    java.lang.StringBuilder name -> name
+    java.lang.StringBuilder publicIdentifier -> publicIdentifier
+    java.lang.StringBuilder systemIdentifier -> systemIdentifier
+    boolean forceQuirks -> forceQuirks
+    java.lang.String getName() -> getName
+    java.lang.String getPublicIdentifier() -> getPublicIdentifier
+    java.lang.String getSystemIdentifier() -> getSystemIdentifier
+    boolean isForceQuirks() -> isForceQuirks
+org.jsoup.parser.Token$EOF -> org.jsoup.parser.Token$EOF:
+org.jsoup.parser.Token$EndTag -> org.jsoup.parser.Token$EndTag:
+    java.lang.String toString() -> toString
+org.jsoup.parser.Token$StartTag -> org.jsoup.parser.Token$StartTag:
+    java.lang.String toString() -> toString
+org.jsoup.parser.Token$Tag -> org.jsoup.parser.Token$Tag:
+    java.lang.String tagName -> tagName
+    java.lang.String pendingAttributeName -> pendingAttributeName
+    java.lang.StringBuilder pendingAttributeValue -> pendingAttributeValue
+    boolean selfClosing -> selfClosing
+    org.jsoup.nodes.Attributes attributes -> attributes
+    void newAttribute() -> newAttribute
+    void finaliseTag() -> finaliseTag
+    java.lang.String name() -> name
+    org.jsoup.parser.Token$Tag name(java.lang.String) -> name
+    boolean isSelfClosing() -> isSelfClosing
+    org.jsoup.nodes.Attributes getAttributes() -> getAttributes
+    void appendTagName(java.lang.String) -> appendTagName
+    void appendTagName(char) -> appendTagName
+    void appendAttributeName(java.lang.String) -> appendAttributeName
+    void appendAttributeName(char) -> appendAttributeName
+    void appendAttributeValue(java.lang.String) -> appendAttributeValue
+    void appendAttributeValue(char) -> appendAttributeValue
+org.jsoup.parser.Token$TokenType -> org.jsoup.parser.Token$TokenType:
+    org.jsoup.parser.Token$TokenType Doctype -> Doctype
+    org.jsoup.parser.Token$TokenType StartTag -> StartTag
+    org.jsoup.parser.Token$TokenType EndTag -> EndTag
+    org.jsoup.parser.Token$TokenType Comment -> Comment
+    org.jsoup.parser.Token$TokenType Character -> Character
+    org.jsoup.parser.Token$TokenType EOF -> EOF
+    org.jsoup.parser.Token$TokenType[] $VALUES -> $VALUES
+    org.jsoup.parser.Token$TokenType[] values() -> values
+    org.jsoup.parser.Token$TokenType valueOf(java.lang.String) -> valueOf
+org.jsoup.parser.TokenQueue -> org.jsoup.parser.TokenQueue:
+    java.lang.String queue -> queue
+    int pos -> pos
+    char ESC -> ESC
+    boolean isEmpty() -> isEmpty
+    int remainingLength() -> remainingLength
+    char peek() -> peek
+    void addFirst(java.lang.Character) -> addFirst
+    void addFirst(java.lang.String) -> addFirst
+    boolean matches(java.lang.String) -> matches
+    boolean matchesCS(java.lang.String) -> matchesCS
+    boolean matchesAny(java.lang.String[]) -> matchesAny
+    boolean matchesAny(char[]) -> matchesAny
+    boolean matchesStartTag() -> matchesStartTag
+    boolean matchChomp(java.lang.String) -> matchChomp
+    boolean matchesWhitespace() -> matchesWhitespace
+    boolean matchesWord() -> matchesWord
+    void advance() -> advance
+    char consume() -> consume
+    void consume(java.lang.String) -> consume
+    java.lang.String consumeTo(java.lang.String) -> consumeTo
+    java.lang.String consumeToIgnoreCase(java.lang.String) -> consumeToIgnoreCase
+    java.lang.String consumeToAny(java.lang.String[]) -> consumeToAny
+    java.lang.String chompTo(java.lang.String) -> chompTo
+    java.lang.String chompToIgnoreCase(java.lang.String) -> chompToIgnoreCase
+    java.lang.String chompBalanced(char,char) -> chompBalanced
+    java.lang.String unescape(java.lang.String) -> unescape
+    boolean consumeWhitespace() -> consumeWhitespace
+    java.lang.String consumeWord() -> consumeWord
+    java.lang.String consumeTagName() -> consumeTagName
+    java.lang.String consumeElementSelector() -> consumeElementSelector
+    java.lang.String consumeCssIdentifier() -> consumeCssIdentifier
+    java.lang.String consumeAttributeKey() -> consumeAttributeKey
+    java.lang.String remainder() -> remainder
+    java.lang.String toString() -> toString
+org.jsoup.parser.Tokeniser -> org.jsoup.parser.Tokeniser:
+    char replacementChar -> replacementChar
+    org.jsoup.parser.CharacterReader reader -> reader
+    org.jsoup.parser.ParseErrorList errors -> errors
+    org.jsoup.parser.TokeniserState state -> state
+    org.jsoup.parser.Token emitPending -> emitPending
+    boolean isEmitPending -> isEmitPending
+    java.lang.StringBuilder charBuffer -> charBuffer
+    java.lang.StringBuilder dataBuffer -> dataBuffer
+    org.jsoup.parser.Token$Tag tagPending -> tagPending
+    org.jsoup.parser.Token$Doctype doctypePending -> doctypePending
+    org.jsoup.parser.Token$Comment commentPending -> commentPending
+    org.jsoup.parser.Token$StartTag lastStartTag -> lastStartTag
+    boolean selfClosingFlagAcknowledged -> selfClosingFlagAcknowledged
+    org.jsoup.parser.Token read() -> read
+    void emit(org.jsoup.parser.Token) -> emit
+    void emit(java.lang.String) -> emit
+    void emit(char) -> emit
+    org.jsoup.parser.TokeniserState getState() -> getState
+    void transition(org.jsoup.parser.TokeniserState) -> transition
+    void advanceTransition(org.jsoup.parser.TokeniserState) -> advanceTransition
+    void acknowledgeSelfClosingFlag() -> acknowledgeSelfClosingFlag
+    java.lang.Character consumeCharacterReference(java.lang.Character,boolean) -> consumeCharacterReference
+    org.jsoup.parser.Token$Tag createTagPending(boolean) -> createTagPending
+    void emitTagPending() -> emitTagPending
+    void createCommentPending() -> createCommentPending
+    void emitCommentPending() -> emitCommentPending
+    void createDoctypePending() -> createDoctypePending
+    void emitDoctypePending() -> emitDoctypePending
+    void createTempBuffer() -> createTempBuffer
+    boolean isAppropriateEndTagToken() -> isAppropriateEndTagToken
+    java.lang.String appropriateEndTagName() -> appropriateEndTagName
+    void error(org.jsoup.parser.TokeniserState) -> error
+    void eofError(org.jsoup.parser.TokeniserState) -> eofError
+    void characterReferenceError(java.lang.String) -> characterReferenceError
+    void error(java.lang.String) -> error
+    boolean currentNodeInHtmlNS() -> currentNodeInHtmlNS
+    java.lang.String unescapeEntities(boolean) -> unescapeEntities
+org.jsoup.parser.TokeniserState -> org.jsoup.parser.TokeniserState:
+    org.jsoup.parser.TokeniserState Data -> Data
+    org.jsoup.parser.TokeniserState CharacterReferenceInData -> CharacterReferenceInData
+    org.jsoup.parser.TokeniserState Rcdata -> Rcdata
+    org.jsoup.parser.TokeniserState CharacterReferenceInRcdata -> CharacterReferenceInRcdata
+    org.jsoup.parser.TokeniserState Rawtext -> Rawtext
+    org.jsoup.parser.TokeniserState ScriptData -> ScriptData
+    org.jsoup.parser.TokeniserState PLAINTEXT -> PLAINTEXT
+    org.jsoup.parser.TokeniserState TagOpen -> TagOpen
+    org.jsoup.parser.TokeniserState EndTagOpen -> EndTagOpen
+    org.jsoup.parser.TokeniserState TagName -> TagName
+    org.jsoup.parser.TokeniserState RcdataLessthanSign -> RcdataLessthanSign
+    org.jsoup.parser.TokeniserState RCDATAEndTagOpen -> RCDATAEndTagOpen
+    org.jsoup.parser.TokeniserState RCDATAEndTagName -> RCDATAEndTagName
+    org.jsoup.parser.TokeniserState RawtextLessthanSign -> RawtextLessthanSign
+    org.jsoup.parser.TokeniserState RawtextEndTagOpen -> RawtextEndTagOpen
+    org.jsoup.parser.TokeniserState RawtextEndTagName -> RawtextEndTagName
+    org.jsoup.parser.TokeniserState ScriptDataLessthanSign -> ScriptDataLessthanSign
+    org.jsoup.parser.TokeniserState ScriptDataEndTagOpen -> ScriptDataEndTagOpen
+    org.jsoup.parser.TokeniserState ScriptDataEndTagName -> ScriptDataEndTagName
+    org.jsoup.parser.TokeniserState ScriptDataEscapeStart -> ScriptDataEscapeStart
+    org.jsoup.parser.TokeniserState ScriptDataEscapeStartDash -> ScriptDataEscapeStartDash
+    org.jsoup.parser.TokeniserState ScriptDataEscaped -> ScriptDataEscaped
+    org.jsoup.parser.TokeniserState ScriptDataEscapedDash -> ScriptDataEscapedDash
+    org.jsoup.parser.TokeniserState ScriptDataEscapedDashDash -> ScriptDataEscapedDashDash
+    org.jsoup.parser.TokeniserState ScriptDataEscapedLessthanSign -> ScriptDataEscapedLessthanSign
+    org.jsoup.parser.TokeniserState ScriptDataEscapedEndTagOpen -> ScriptDataEscapedEndTagOpen
+    org.jsoup.parser.TokeniserState ScriptDataEscapedEndTagName -> ScriptDataEscapedEndTagName
+    org.jsoup.parser.TokeniserState ScriptDataDoubleEscapeStart -> ScriptDataDoubleEscapeStart
+    org.jsoup.parser.TokeniserState ScriptDataDoubleEscaped -> ScriptDataDoubleEscaped
+    org.jsoup.parser.TokeniserState ScriptDataDoubleEscapedDash -> ScriptDataDoubleEscapedDash
+    org.jsoup.parser.TokeniserState ScriptDataDoubleEscapedDashDash -> ScriptDataDoubleEscapedDashDash
+    org.jsoup.parser.TokeniserState ScriptDataDoubleEscapedLessthanSign -> ScriptDataDoubleEscapedLessthanSign
+    org.jsoup.parser.TokeniserState ScriptDataDoubleEscapeEnd -> ScriptDataDoubleEscapeEnd
+    org.jsoup.parser.TokeniserState BeforeAttributeName -> BeforeAttributeName
+    org.jsoup.parser.TokeniserState AttributeName -> AttributeName
+    org.jsoup.parser.TokeniserState AfterAttributeName -> AfterAttributeName
+    org.jsoup.parser.TokeniserState BeforeAttributeValue -> BeforeAttributeValue
+    org.jsoup.parser.TokeniserState AttributeValue_doubleQuoted -> AttributeValue_doubleQuoted
+    org.jsoup.parser.TokeniserState AttributeValue_singleQuoted -> AttributeValue_singleQuoted
+    org.jsoup.parser.TokeniserState AttributeValue_unquoted -> AttributeValue_unquoted
+    org.jsoup.parser.TokeniserState AfterAttributeValue_quoted -> AfterAttributeValue_quoted
+    org.jsoup.parser.TokeniserState SelfClosingStartTag -> SelfClosingStartTag
+    org.jsoup.parser.TokeniserState BogusComment -> BogusComment
+    org.jsoup.parser.TokeniserState MarkupDeclarationOpen -> MarkupDeclarationOpen
+    org.jsoup.parser.TokeniserState CommentStart -> CommentStart
+    org.jsoup.parser.TokeniserState CommentStartDash -> CommentStartDash
+    org.jsoup.parser.TokeniserState Comment -> Comment
+    org.jsoup.parser.TokeniserState CommentEndDash -> CommentEndDash
+    org.jsoup.parser.TokeniserState CommentEnd -> CommentEnd
+    org.jsoup.parser.TokeniserState CommentEndBang -> CommentEndBang
+    org.jsoup.parser.TokeniserState Doctype -> Doctype
+    org.jsoup.parser.TokeniserState BeforeDoctypeName -> BeforeDoctypeName
+    org.jsoup.parser.TokeniserState DoctypeName -> DoctypeName
+    org.jsoup.parser.TokeniserState AfterDoctypeName -> AfterDoctypeName
+    org.jsoup.parser.TokeniserState AfterDoctypePublicKeyword -> AfterDoctypePublicKeyword
+    org.jsoup.parser.TokeniserState BeforeDoctypePublicIdentifier -> BeforeDoctypePublicIdentifier
+    org.jsoup.parser.TokeniserState DoctypePublicIdentifier_doubleQuoted -> DoctypePublicIdentifier_doubleQuoted
+    org.jsoup.parser.TokeniserState DoctypePublicIdentifier_singleQuoted -> DoctypePublicIdentifier_singleQuoted
+    org.jsoup.parser.TokeniserState AfterDoctypePublicIdentifier -> AfterDoctypePublicIdentifier
+    org.jsoup.parser.TokeniserState BetweenDoctypePublicAndSystemIdentifiers -> BetweenDoctypePublicAndSystemIdentifiers
+    org.jsoup.parser.TokeniserState AfterDoctypeSystemKeyword -> AfterDoctypeSystemKeyword
+    org.jsoup.parser.TokeniserState BeforeDoctypeSystemIdentifier -> BeforeDoctypeSystemIdentifier
+    org.jsoup.parser.TokeniserState DoctypeSystemIdentifier_doubleQuoted -> DoctypeSystemIdentifier_doubleQuoted
+    org.jsoup.parser.TokeniserState DoctypeSystemIdentifier_singleQuoted -> DoctypeSystemIdentifier_singleQuoted
+    org.jsoup.parser.TokeniserState AfterDoctypeSystemIdentifier -> AfterDoctypeSystemIdentifier
+    org.jsoup.parser.TokeniserState BogusDoctype -> BogusDoctype
+    org.jsoup.parser.TokeniserState CdataSection -> CdataSection
+    char nullChar -> nullChar
+    char replacementChar -> replacementChar
+    java.lang.String replacementStr -> replacementStr
+    char eof -> eof
+    org.jsoup.parser.TokeniserState[] $VALUES -> $VALUES
+    org.jsoup.parser.TokeniserState[] values() -> values
+    org.jsoup.parser.TokeniserState valueOf(java.lang.String) -> valueOf
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+    java.lang.String access$100() -> access$100
+org.jsoup.parser.TokeniserState$1 -> org.jsoup.parser.TokeniserState$1:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$10 -> org.jsoup.parser.TokeniserState$10:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$11 -> org.jsoup.parser.TokeniserState$11:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$12 -> org.jsoup.parser.TokeniserState$12:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$13 -> org.jsoup.parser.TokeniserState$13:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+    void anythingElse(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> anythingElse
+org.jsoup.parser.TokeniserState$14 -> org.jsoup.parser.TokeniserState$14:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$15 -> org.jsoup.parser.TokeniserState$15:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$16 -> org.jsoup.parser.TokeniserState$16:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+    void anythingElse(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> anythingElse
+org.jsoup.parser.TokeniserState$17 -> org.jsoup.parser.TokeniserState$17:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$18 -> org.jsoup.parser.TokeniserState$18:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$19 -> org.jsoup.parser.TokeniserState$19:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+    void anythingElse(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> anythingElse
+org.jsoup.parser.TokeniserState$2 -> org.jsoup.parser.TokeniserState$2:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$20 -> org.jsoup.parser.TokeniserState$20:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$21 -> org.jsoup.parser.TokeniserState$21:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$22 -> org.jsoup.parser.TokeniserState$22:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$23 -> org.jsoup.parser.TokeniserState$23:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$24 -> org.jsoup.parser.TokeniserState$24:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$25 -> org.jsoup.parser.TokeniserState$25:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$26 -> org.jsoup.parser.TokeniserState$26:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$27 -> org.jsoup.parser.TokeniserState$27:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+    void anythingElse(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> anythingElse
+org.jsoup.parser.TokeniserState$28 -> org.jsoup.parser.TokeniserState$28:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$29 -> org.jsoup.parser.TokeniserState$29:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$3 -> org.jsoup.parser.TokeniserState$3:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$30 -> org.jsoup.parser.TokeniserState$30:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$31 -> org.jsoup.parser.TokeniserState$31:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$32 -> org.jsoup.parser.TokeniserState$32:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$33 -> org.jsoup.parser.TokeniserState$33:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$34 -> org.jsoup.parser.TokeniserState$34:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$35 -> org.jsoup.parser.TokeniserState$35:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$36 -> org.jsoup.parser.TokeniserState$36:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$37 -> org.jsoup.parser.TokeniserState$37:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$38 -> org.jsoup.parser.TokeniserState$38:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$39 -> org.jsoup.parser.TokeniserState$39:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$4 -> org.jsoup.parser.TokeniserState$4:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$40 -> org.jsoup.parser.TokeniserState$40:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$41 -> org.jsoup.parser.TokeniserState$41:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$42 -> org.jsoup.parser.TokeniserState$42:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$43 -> org.jsoup.parser.TokeniserState$43:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$44 -> org.jsoup.parser.TokeniserState$44:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$45 -> org.jsoup.parser.TokeniserState$45:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$46 -> org.jsoup.parser.TokeniserState$46:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$47 -> org.jsoup.parser.TokeniserState$47:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$48 -> org.jsoup.parser.TokeniserState$48:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$49 -> org.jsoup.parser.TokeniserState$49:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$5 -> org.jsoup.parser.TokeniserState$5:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$50 -> org.jsoup.parser.TokeniserState$50:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$51 -> org.jsoup.parser.TokeniserState$51:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$52 -> org.jsoup.parser.TokeniserState$52:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$53 -> org.jsoup.parser.TokeniserState$53:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$54 -> org.jsoup.parser.TokeniserState$54:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$55 -> org.jsoup.parser.TokeniserState$55:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$56 -> org.jsoup.parser.TokeniserState$56:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$57 -> org.jsoup.parser.TokeniserState$57:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$58 -> org.jsoup.parser.TokeniserState$58:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$59 -> org.jsoup.parser.TokeniserState$59:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$6 -> org.jsoup.parser.TokeniserState$6:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$60 -> org.jsoup.parser.TokeniserState$60:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$61 -> org.jsoup.parser.TokeniserState$61:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$62 -> org.jsoup.parser.TokeniserState$62:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$63 -> org.jsoup.parser.TokeniserState$63:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$64 -> org.jsoup.parser.TokeniserState$64:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$65 -> org.jsoup.parser.TokeniserState$65:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$66 -> org.jsoup.parser.TokeniserState$66:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$67 -> org.jsoup.parser.TokeniserState$67:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$7 -> org.jsoup.parser.TokeniserState$7:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$8 -> org.jsoup.parser.TokeniserState$8:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TokeniserState$9 -> org.jsoup.parser.TokeniserState$9:
+    void read(org.jsoup.parser.Tokeniser,org.jsoup.parser.CharacterReader) -> read
+org.jsoup.parser.TreeBuilder -> org.jsoup.parser.TreeBuilder:
+    org.jsoup.parser.CharacterReader reader -> reader
+    org.jsoup.parser.Tokeniser tokeniser -> tokeniser
+    org.jsoup.nodes.Document doc -> doc
+    org.jsoup.helper.DescendableLinkedList stack -> stack
+    java.lang.String baseUri -> baseUri
+    org.jsoup.parser.Token currentToken -> currentToken
+    org.jsoup.parser.ParseErrorList errors -> errors
+    void initialiseParse(java.lang.String,java.lang.String,org.jsoup.parser.ParseErrorList) -> initialiseParse
+    org.jsoup.nodes.Document parse(java.lang.String,java.lang.String) -> parse
+    org.jsoup.nodes.Document parse(java.lang.String,java.lang.String,org.jsoup.parser.ParseErrorList) -> parse
+    void runParser() -> runParser
+    boolean process(org.jsoup.parser.Token) -> process
+    org.jsoup.nodes.Element currentElement() -> currentElement
+org.jsoup.parser.XmlTreeBuilder -> org.jsoup.parser.XmlTreeBuilder:
+    void initialiseParse(java.lang.String,java.lang.String,org.jsoup.parser.ParseErrorList) -> initialiseParse
+    boolean process(org.jsoup.parser.Token) -> process
+    void insertNode(org.jsoup.nodes.Node) -> insertNode
+    org.jsoup.nodes.Element insert(org.jsoup.parser.Token$StartTag) -> insert
+    void insert(org.jsoup.parser.Token$Comment) -> insert
+    void insert(org.jsoup.parser.Token$Character) -> insert
+    void insert(org.jsoup.parser.Token$Doctype) -> insert
+    void popStackToClose(org.jsoup.parser.Token$EndTag) -> popStackToClose
+org.jsoup.parser.XmlTreeBuilder$1 -> org.jsoup.parser.XmlTreeBuilder$1:
+    int[] $SwitchMap$org$jsoup$parser$Token$TokenType -> $SwitchMap$org$jsoup$parser$Token$TokenType
+org.jsoup.safety.Cleaner -> org.jsoup.safety.Cleaner:
+    org.jsoup.safety.Whitelist whitelist -> whitelist
+    org.jsoup.nodes.Document clean(org.jsoup.nodes.Document) -> clean
+    boolean isValid(org.jsoup.nodes.Document) -> isValid
+    int copySafeNodes(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> copySafeNodes
+    org.jsoup.safety.Cleaner$ElementMeta createSafeElement(org.jsoup.nodes.Element) -> createSafeElement
+org.jsoup.safety.Cleaner$ElementMeta -> org.jsoup.safety.Cleaner$ElementMeta:
+    org.jsoup.nodes.Element el -> el
+    int numAttribsDiscarded -> numAttribsDiscarded
+org.jsoup.safety.Whitelist -> org.jsoup.safety.Whitelist:
+    java.util.Set tagNames -> tagNames
+    java.util.Map attributes -> attributes
+    java.util.Map enforcedAttributes -> enforcedAttributes
+    java.util.Map protocols -> protocols
+    boolean preserveRelativeLinks -> preserveRelativeLinks
+    org.jsoup.safety.Whitelist none() -> none
+    org.jsoup.safety.Whitelist simpleText() -> simpleText
+    org.jsoup.safety.Whitelist basic() -> basic
+    org.jsoup.safety.Whitelist basicWithImages() -> basicWithImages
+    org.jsoup.safety.Whitelist relaxed() -> relaxed
+    org.jsoup.safety.Whitelist addTags(java.lang.String[]) -> addTags
+    org.jsoup.safety.Whitelist addAttributes(java.lang.String,java.lang.String[]) -> addAttributes
+    org.jsoup.safety.Whitelist addEnforcedAttribute(java.lang.String,java.lang.String,java.lang.String) -> addEnforcedAttribute
+    org.jsoup.safety.Whitelist preserveRelativeLinks(boolean) -> preserveRelativeLinks
+    org.jsoup.safety.Whitelist addProtocols(java.lang.String,java.lang.String,java.lang.String[]) -> addProtocols
+    boolean isSafeTag(java.lang.String) -> isSafeTag
+    boolean isSafeAttribute(java.lang.String,org.jsoup.nodes.Element,org.jsoup.nodes.Attribute) -> isSafeAttribute
+    boolean testValidProtocol(org.jsoup.nodes.Element,org.jsoup.nodes.Attribute,java.util.Set) -> testValidProtocol
+    org.jsoup.nodes.Attributes getEnforcedAttributes(java.lang.String) -> getEnforcedAttributes
+org.jsoup.safety.Whitelist$AttributeKey -> org.jsoup.safety.Whitelist$AttributeKey:
+    org.jsoup.safety.Whitelist$AttributeKey valueOf(java.lang.String) -> valueOf
+org.jsoup.safety.Whitelist$AttributeValue -> org.jsoup.safety.Whitelist$AttributeValue:
+    org.jsoup.safety.Whitelist$AttributeValue valueOf(java.lang.String) -> valueOf
+org.jsoup.safety.Whitelist$Protocol -> org.jsoup.safety.Whitelist$Protocol:
+    org.jsoup.safety.Whitelist$Protocol valueOf(java.lang.String) -> valueOf
+org.jsoup.safety.Whitelist$TagName -> org.jsoup.safety.Whitelist$TagName:
+    org.jsoup.safety.Whitelist$TagName valueOf(java.lang.String) -> valueOf
+org.jsoup.safety.Whitelist$TypedValue -> org.jsoup.safety.Whitelist$TypedValue:
+    java.lang.String value -> value
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+    java.lang.String toString() -> toString
+org.jsoup.select.Collector -> org.jsoup.select.Collector:
+    org.jsoup.select.Elements collect(org.jsoup.select.Evaluator,org.jsoup.nodes.Element) -> collect
+org.jsoup.select.Collector$Accumulator -> org.jsoup.select.Collector$Accumulator:
+    org.jsoup.nodes.Element root -> root
+    org.jsoup.select.Elements elements -> elements
+    org.jsoup.select.Evaluator eval -> eval
+    void head(org.jsoup.nodes.Node,int) -> head
+    void tail(org.jsoup.nodes.Node,int) -> tail
+org.jsoup.select.CombiningEvaluator -> org.jsoup.select.CombiningEvaluator:
+    java.util.List evaluators -> evaluators
+    org.jsoup.select.Evaluator rightMostEvaluator() -> rightMostEvaluator
+    void replaceRightMostEvaluator(org.jsoup.select.Evaluator) -> replaceRightMostEvaluator
+org.jsoup.select.CombiningEvaluator$And -> org.jsoup.select.CombiningEvaluator$And:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.CombiningEvaluator$Or -> org.jsoup.select.CombiningEvaluator$Or:
+    void add(org.jsoup.select.Evaluator) -> add
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Elements -> org.jsoup.select.Elements:
+    java.util.List contents -> contents
+    org.jsoup.select.Elements clone() -> clone
+    java.lang.String attr(java.lang.String) -> attr
+    boolean hasAttr(java.lang.String) -> hasAttr
+    org.jsoup.select.Elements attr(java.lang.String,java.lang.String) -> attr
+    org.jsoup.select.Elements removeAttr(java.lang.String) -> removeAttr
+    org.jsoup.select.Elements addClass(java.lang.String) -> addClass
+    org.jsoup.select.Elements removeClass(java.lang.String) -> removeClass
+    org.jsoup.select.Elements toggleClass(java.lang.String) -> toggleClass
+    boolean hasClass(java.lang.String) -> hasClass
+    java.lang.String val() -> val
+    org.jsoup.select.Elements val(java.lang.String) -> val
+    java.lang.String text() -> text
+    boolean hasText() -> hasText
+    java.lang.String html() -> html
+    java.lang.String outerHtml() -> outerHtml
+    java.lang.String toString() -> toString
+    org.jsoup.select.Elements tagName(java.lang.String) -> tagName
+    org.jsoup.select.Elements html(java.lang.String) -> html
+    org.jsoup.select.Elements prepend(java.lang.String) -> prepend
+    org.jsoup.select.Elements append(java.lang.String) -> append
+    org.jsoup.select.Elements before(java.lang.String) -> before
+    org.jsoup.select.Elements after(java.lang.String) -> after
+    org.jsoup.select.Elements wrap(java.lang.String) -> wrap
+    org.jsoup.select.Elements unwrap() -> unwrap
+    org.jsoup.select.Elements empty() -> empty
+    org.jsoup.select.Elements remove() -> remove
+    org.jsoup.select.Elements select(java.lang.String) -> select
+    org.jsoup.select.Elements not(java.lang.String) -> not
+    org.jsoup.select.Elements eq(int) -> eq
+    boolean is(java.lang.String) -> is
+    org.jsoup.select.Elements parents() -> parents
+    org.jsoup.nodes.Element first() -> first
+    org.jsoup.nodes.Element last() -> last
+    org.jsoup.select.Elements traverse(org.jsoup.select.NodeVisitor) -> traverse
+    int size() -> size
+    boolean isEmpty() -> isEmpty
+    boolean contains(java.lang.Object) -> contains
+    java.util.Iterator iterator() -> iterator
+    java.lang.Object[] toArray() -> toArray
+    java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+    boolean add(org.jsoup.nodes.Element) -> add
+    boolean remove(java.lang.Object) -> remove
+    boolean containsAll(java.util.Collection) -> containsAll
+    boolean addAll(java.util.Collection) -> addAll
+    boolean addAll(int,java.util.Collection) -> addAll
+    boolean removeAll(java.util.Collection) -> removeAll
+    boolean retainAll(java.util.Collection) -> retainAll
+    void clear() -> clear
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    org.jsoup.nodes.Element get(int) -> get
+    org.jsoup.nodes.Element set(int,org.jsoup.nodes.Element) -> set
+    void add(int,org.jsoup.nodes.Element) -> add
+    org.jsoup.nodes.Element remove(int) -> remove
+    int indexOf(java.lang.Object) -> indexOf
+    int lastIndexOf(java.lang.Object) -> lastIndexOf
+    java.util.ListIterator listIterator() -> listIterator
+    java.util.ListIterator listIterator(int) -> listIterator
+    java.util.List subList(int,int) -> subList
+    java.lang.Object clone() -> clone
+    java.lang.Object remove(int) -> remove
+    void add(int,java.lang.Object) -> add
+    java.lang.Object set(int,java.lang.Object) -> set
+    java.lang.Object get(int) -> get
+    boolean add(java.lang.Object) -> add
+org.jsoup.select.Evaluator -> org.jsoup.select.Evaluator:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+org.jsoup.select.Evaluator$AllElements -> org.jsoup.select.Evaluator$AllElements:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$Attribute -> org.jsoup.select.Evaluator$Attribute:
+    java.lang.String key -> key
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$AttributeKeyPair -> org.jsoup.select.Evaluator$AttributeKeyPair:
+    java.lang.String key -> key
+    java.lang.String value -> value
+org.jsoup.select.Evaluator$AttributeStarting -> org.jsoup.select.Evaluator$AttributeStarting:
+    java.lang.String keyPrefix -> keyPrefix
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$AttributeWithValue -> org.jsoup.select.Evaluator$AttributeWithValue:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$AttributeWithValueContaining -> org.jsoup.select.Evaluator$AttributeWithValueContaining:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$AttributeWithValueEnding -> org.jsoup.select.Evaluator$AttributeWithValueEnding:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$AttributeWithValueMatching -> org.jsoup.select.Evaluator$AttributeWithValueMatching:
+    java.lang.String key -> key
+    java.util.regex.Pattern pattern -> pattern
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$AttributeWithValueNot -> org.jsoup.select.Evaluator$AttributeWithValueNot:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$AttributeWithValueStarting -> org.jsoup.select.Evaluator$AttributeWithValueStarting:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$Class -> org.jsoup.select.Evaluator$Class:
+    java.lang.String className -> className
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$ContainsOwnText -> org.jsoup.select.Evaluator$ContainsOwnText:
+    java.lang.String searchText -> searchText
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$ContainsText -> org.jsoup.select.Evaluator$ContainsText:
+    java.lang.String searchText -> searchText
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$Id -> org.jsoup.select.Evaluator$Id:
+    java.lang.String id -> id
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$IndexEquals -> org.jsoup.select.Evaluator$IndexEquals:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$IndexEvaluator -> org.jsoup.select.Evaluator$IndexEvaluator:
+    int index -> index
+org.jsoup.select.Evaluator$IndexGreaterThan -> org.jsoup.select.Evaluator$IndexGreaterThan:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$IndexLessThan -> org.jsoup.select.Evaluator$IndexLessThan:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$Matches -> org.jsoup.select.Evaluator$Matches:
+    java.util.regex.Pattern pattern -> pattern
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$MatchesOwn -> org.jsoup.select.Evaluator$MatchesOwn:
+    java.util.regex.Pattern pattern -> pattern
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.Evaluator$Tag -> org.jsoup.select.Evaluator$Tag:
+    java.lang.String tagName -> tagName
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.NodeTraversor -> org.jsoup.select.NodeTraversor:
+    org.jsoup.select.NodeVisitor visitor -> visitor
+    void traverse(org.jsoup.nodes.Node) -> traverse
+org.jsoup.select.NodeVisitor -> org.jsoup.select.NodeVisitor:
+    void head(org.jsoup.nodes.Node,int) -> head
+    void tail(org.jsoup.nodes.Node,int) -> tail
+org.jsoup.select.QueryParser -> org.jsoup.select.QueryParser:
+    java.lang.String[] combinators -> combinators
+    org.jsoup.parser.TokenQueue tq -> tq
+    java.lang.String query -> query
+    java.util.List evals -> evals
+    org.jsoup.select.Evaluator parse(java.lang.String) -> parse
+    org.jsoup.select.Evaluator parse() -> parse
+    void combinator(char) -> combinator
+    java.lang.String consumeSubQuery() -> consumeSubQuery
+    void findElements() -> findElements
+    void byId() -> byId
+    void byClass() -> byClass
+    void byTag() -> byTag
+    void byAttribute() -> byAttribute
+    void allElements() -> allElements
+    void indexLessThan() -> indexLessThan
+    void indexGreaterThan() -> indexGreaterThan
+    void indexEquals() -> indexEquals
+    int consumeIndex() -> consumeIndex
+    void has() -> has
+    void contains(boolean) -> contains
+    void matches(boolean) -> matches
+    void not() -> not
+org.jsoup.select.Selector -> org.jsoup.select.Selector:
+    org.jsoup.select.Evaluator evaluator -> evaluator
+    org.jsoup.nodes.Element root -> root
+    org.jsoup.select.Elements select(java.lang.String,org.jsoup.nodes.Element) -> select
+    org.jsoup.select.Elements select(java.lang.String,java.lang.Iterable) -> select
+    org.jsoup.select.Elements select() -> select
+    org.jsoup.select.Elements filterOut(java.util.Collection,java.util.Collection) -> filterOut
+org.jsoup.select.Selector$SelectorParseException -> org.jsoup.select.Selector$SelectorParseException:
+org.jsoup.select.StructuralEvaluator -> org.jsoup.select.StructuralEvaluator:
+    org.jsoup.select.Evaluator evaluator -> evaluator
+org.jsoup.select.StructuralEvaluator$Has -> org.jsoup.select.StructuralEvaluator$Has:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.StructuralEvaluator$ImmediateParent -> org.jsoup.select.StructuralEvaluator$ImmediateParent:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.StructuralEvaluator$ImmediatePreviousSibling -> org.jsoup.select.StructuralEvaluator$ImmediatePreviousSibling:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.StructuralEvaluator$Not -> org.jsoup.select.StructuralEvaluator$Not:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.StructuralEvaluator$Parent -> org.jsoup.select.StructuralEvaluator$Parent:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.StructuralEvaluator$PreviousSibling -> org.jsoup.select.StructuralEvaluator$PreviousSibling:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
+    java.lang.String toString() -> toString
+org.jsoup.select.StructuralEvaluator$Root -> org.jsoup.select.StructuralEvaluator$Root:
+    boolean matches(org.jsoup.nodes.Element,org.jsoup.nodes.Element) -> matches
