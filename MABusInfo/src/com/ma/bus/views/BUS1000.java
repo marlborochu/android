@@ -1,5 +1,7 @@
 package com.ma.bus.views;
-
+/**
+ * @author Marlboro.chu@gmail.com
+ * */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
