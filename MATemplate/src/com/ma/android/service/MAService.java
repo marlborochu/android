@@ -1,5 +1,6 @@
 package com.ma.android.service;
-
+/**
+ * */
 import com.ma.android.schedule.ScheduleManager;
 import android.app.Service;
 import android.content.Intent;
