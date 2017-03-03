@@ -1,5 +1,7 @@
 package com.ma.bus.views;
-
+/**
+ * @author Marlboro.chu@gmail.com
+ * */
 import android.content.Context;
 import android.view.View;
 import android.view.View.OnClickListener;
